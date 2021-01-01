@@ -17,7 +17,7 @@
         <h2 class="h1-responsive font-weight-bold my-5">{{getTitle()}}</h2>
         <!-- Grid row -->
         <div *ngFor="let team of teams">
-            <a name="{{team.subTeamName}}"></a>
+            <a name="{{team.location}}"></a>
             <h2 class="subteam d-flex justify-content-center">{{team.location}}</h2>
             <!-- <h5>{{team.description}}</h5> -->
             <div *ngFor="let member of team.members; let i = index" id="members-display">
