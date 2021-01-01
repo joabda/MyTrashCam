@@ -9,13 +9,15 @@
             <a><img (click)="show(i)" class="img-fluid z-depth-1" src="{{filteredPictures[i].pictureURL}}"
                     alt="Photo of {{filteredPictures[i].model}}"></a>
                 <a href="/models/#{{filteredPictures[i].model}}">
-                    <h5 class="font-weight-bold mt-4 mb-3" style="text-align: center;">{{filteredPictures[i].model}}</h5>
+                    <h5 class="font-weight-bold" style="text-align: center;">{{filteredPictures[i].model}}</h5>
                 </a>
                 <!-- location -->
-                <!-- <a class="p-2 fa-lg fb-ic location" href="{{filteredPictures[i].locationLink}}" style="align-items: center;" target="_blank">
-                    <mdb-icon fas icon="map-marker"  class="blue-text"> </mdb-icon>
-                    <h5 class="font-weight-bold mt-4 mb-3" style="text-align: center;">{{filteredPictures[i].location}}</h5>
-                </a> -->
+                <a class="link-location" href="{{filteredPictures[i].locationLink}}" target="_blank">
+                    <h5 class="font-weight-bold">
+                        <mdb-icon fas icon="map-marker" class="blue-text icon"> </mdb-icon>
+                        {{filteredPictures[i].location}}
+                    </h5>
+                </a>
         </div>
         <!-- Grid column -->
 
@@ -24,9 +26,15 @@
             <a><img (click)="show(i+1)" class="img-fluid z-depth-1" src="{{filteredPictures[i+1].pictureURL}}"
                     alt="Photo of {{filteredPictures[i+1].model}}"></a>
             <a href="/models/#{{filteredPictures[i+1].model}}">
-                <h5 class="font-weight-bold mt-4 mb-3" style="text-align: center;">{{filteredPictures[i+1].model}}</h5>
+                <h5 class="font-weight-bold" style="text-align: center;">{{filteredPictures[i+1].model}}</h5>
             </a>
-
+                <!-- location -->
+                <a class="link-location" href="{{filteredPictures[i+1].locationLink}}" target="_blank">
+                    <h5 class="font-weight-bold">
+                        <mdb-icon fas icon="map-marker" class="blue-text icon"> </mdb-icon>
+                        {{filteredPictures[i+1].location}}
+                    </h5>
+                </a>
         </div>
         <!-- Grid column -->
 
@@ -35,7 +43,14 @@
             <a><img (click)="show(i+2)" class="img-fluid z-depth-1" src="{{filteredPictures[i+2].pictureURL}}"
                     alt="Photo of {{filteredPictures[i+2].model}}"></a>
             <a href="/models/#{{filteredPictures[i+2].model}}">
-                <h5 class="font-weight-bold mt-4 mb-3" style="text-align: center;">{{filteredPictures[i+2].model}}</h5>
+                <h5 class="font-weight-bold" style="text-align: center;">{{filteredPictures[i+2].model}}</h5>
+            </a>                
+            <!-- location -->
+            <a class="link-location" href="{{filteredPictures[i+2].locationLink}}"  target="_blank">
+                <h5 class="font-weight-bold">
+                    <mdb-icon fas icon="map-marker" class="blue-text icon"> </mdb-icon>
+                    {{filteredPictures[i+2].location}}
+                </h5>
             </a>
         </div>
         <!-- Grid column -->
