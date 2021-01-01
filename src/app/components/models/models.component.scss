@@ -1,0 +1,46 @@
+#members-display {
+    img {
+        width: 200px;
+    }
+}
+
+.team-section {
+    max-width: 98vw;
+}
+
+.subteam {
+    font-size: 3rem;
+    margin-bottom: 3vh;
+    margin-top: 5vh;
+    text-align: left;
+}
+
+.row {
+    margin-bottom: 30px !important;
+}
+
+.line{
+    width: 60vw;
+    margin-bottom: 7vh;
+    border-bottom: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15vh;
+}
+
+@media screen and (max-width: 1548px) and (min-width: 1037px) {
+    #team-container ul li {
+        width: 33.3333333333%;
+    }
+
+    .member-expand {
+        width: 300%;
+    }
+}
+
+@media screen and (max-width: 1015px) {
+
+    .member {
+        margin-bottom: 0px;
+    }
+}

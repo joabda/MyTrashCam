@@ -1,0 +1,109 @@
+[ 
+    {
+        "question": "Hyperloop",
+        "features": [
+            {
+                "title": "New",
+                "detail": "Hyperloop is a new mode of high speed transportation, similar to a train. A capsule travels inside a low pressure tube."
+            },
+            {
+                "title": "Fast",
+                "detail": "It is the almost perfect vacuum in the tube that reduces air friction and allows the capsule to travel at a speed that could theoretically reach 760 mph (1223 km / h)."
+            },
+            {
+                "title": "Electric",
+                "detail": "All fully electric, which can be powered by solar panels positioned above the tube. This technology would therefore be the fastest means of transport on Earth with the smallest environmental impact."
+            }
+        ],
+        "comp": "Competition",
+        "compElements": [
+            "In 2015, SpaceX canceled the Hyperloop Pod Competition a competition to build the capsule that will travel the fastest in SpaceX's tube.",
+            "For this first competition, teams of students from all over the world gathered at a weekend in 2016 to share their capsule design.",
+            "The best of them were allowed to build a prototype and participate in the first competition in January 2017.",
+            "They were able to go to SpaceX's California offices and test their capsule in SpaceX's test tube.",
+            "Depui, three other competitions took place in August 2017, January 2018 and July 2019.",
+            "A competition is planned in the coming years."
+        ],
+        "events": [
+            {
+                "date": "August 2013",
+                "title": "The birth",
+                "text": "Elon Musk proposes the Hyperloop project in California",
+                "more": "bla 1",
+                "imgSrc": ""
+            },
+            {
+                "date": "January 2015",
+                "title": "Un Titre....",
+                "text": "Announcement of the construction of a test track for Hyperloop capsules open to businesses and students",
+                "more": "bla 1",
+                "imgSrc": ""
+            },
+            {
+                "date": "January 2017",
+                "title": "A first",
+                "text": "First edition of the Hyperloop Pod Competition takes place",
+                "more": "bla 1",
+                "imgSrc": ""
+            },
+            {
+                "date": "January 2020",
+                "title": "Hyperloop at Poly",
+                "text": "Creation of PolyLoop",
+                "more": "bla 1",
+                "imgSrc": ""
+            }
+        ]
+    },
+    {
+        "question": "Hyperloop",
+        "features": [
+            {
+                "title": "Nouveau",
+                "detail": "L’Hyperloop est un nouveau mode de transport à haute vitesse, similaire à un train. Une capsule voyage à l’intérieur d’un tube à basse pression."
+            },
+            {
+                "title": "Rapide",
+                "detail": "C’est le vide presque parfait dans le tube qui réduit la friction de l’air et permet à la capsule de voyager à une vitesse qui pourrait théoriquement atteindre 760 mph (1 223 km/h)."
+            },
+            {
+                "title": "Électrique",
+                "detail": "Le tout entièrement électrique, pouvant être alimenté par des panneaux solaires positionnés au-dessus du tube. Cette technologie serait donc le moyen de transport le plus rapide sur Terre ayant le plus petit impact environnemental."
+            }
+        ],
+        "comp": "Compétition",
+        "compElements": [
+            "En 2015, SpaceX annone le Hyperloop Pod Competition, une compétition ayant pour but de construire la capsule qui voyagera le plus rapidement dans le tube de SpaceX. Pour cette prémiere compétition, des équipes d'étudiants de partout a travers le monde se sont réunies lors d'un weekend en 2016 afin de partager leur design de capsule. Les meilleurs d'entre eux ont eu l'autorisation de construire un prototype et de participer a la première compétition en janvier 2017. Ils ont pu se rendre en Californie afin de tester leur capsule dans le tube d'essaie de SpaceX. Depuis, trois autres compétitions ont eu lieu et plusieurs autres compétitions sont en développement."
+        ],
+        "events": [
+            {
+                "date": "Août 2013",
+                "title": "La naissance",
+                "text": "Elon Musk propose le projet Hyperloop en Californie ",
+                "more": "bla 1",
+                "imgSrc": ""
+            },
+            {
+                "date": "Janvier 2015",
+                "title": "Première compétition",
+                "text": "Annonce de la construction d’une piste d’essai pour capsules Hyperloop ouverte aux entreprises et étudiants ",
+                "more": "bla 1",
+                "imgSrc": ""
+            },
+            {
+                "date": "Janvier 2017",
+                "title": "Une première",
+                "text": "Première édition du Hyperloop Pod Competition a lieu",
+                "more": "bla 1",
+                "imgSrc": ""
+            },
+            {
+                "date": "Janvier 2020",
+                "title": "Hyperloop a Poly",
+                "text": "Création de PolyLoop",
+                "more": "bla 1",
+                "imgSrc": ""
+            }
+        ]
+    }
+]

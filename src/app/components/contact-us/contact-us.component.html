@@ -1,0 +1,86 @@
+<div class="wrapper" id="contact">
+  <!--Section: Contact v.1-->
+  <section class="pb-5">
+
+    <!--Section heading-->
+    <h2 class="title">{{text.title}}</h2>
+
+    <!-- Contact Form -->
+    <div class="row d-flex justify-content-center">
+      <img src="../../../assets/img/peter.jpg" alt="Peter Haddad, Photographer" id="picture">
+
+      <!--Form with header-->
+      <mdb-card id="form">
+        <mdb-card-body>
+          <!--Header-->
+          <div class="form-header accent-1">
+            <h3>
+              <mdb-icon fas icon="envelope"></mdb-icon> {{text.caption}}
+            </h3>
+          </div>
+          <!--Body-->
+          <div class="md-form">
+            <mdb-icon fas icon="user" class="prefix grey-text"></mdb-icon>
+            <input mdbInput type="text" id="form3" class="form-control" [(ngModel)]="currentValues.name">
+            <label for="form3">{{text.name}}</label>
+          </div>
+          <div class="md-form">
+            <mdb-icon fas icon="envelope" class="prefix grey-text"></mdb-icon>
+            <input mdbInput type="text" id="form2" class="form-control" [(ngModel)]="currentValues.email">
+            <label for="form2">{{text.email}}</label>
+          </div>
+          <div class="md-form">
+            <mdb-icon fas icon="tag" class="prefix grey-text"></mdb-icon>
+            <input mdbInput type="text" id="form32" class="form-control" [(ngModel)]="currentValues.reason">
+            <label for="form34">{{text.subject}}</label>
+          </div>
+          <div class="md-form">
+            <mdb-icon fas icon="pencil-alt" class="prefix grey-text"></mdb-icon>
+            <textarea mdbInput type="text" id="form8" class="md-textarea"
+              [(ngModel)]="currentValues.message"></textarea>
+            <label for="form8">{{text.message}}</label>
+          </div>
+          <div class="text-center">
+            <button mdbBtn color="light-blue" class="waves-light" mdbWavesEffect
+              (click)="submit()">{{text.send}}</button>
+          </div>
+        </mdb-card-body>
+      </mdb-card>
+      <!--Form with header-->
+    </div>
+    <!-- Contact Form -->
+  </section>
+
+  <!-- Contact Infos -->
+  <div class="row d-flex justify-content-center" id="info-cont">
+    <figure class="col">
+      <a class="d-flex justify-content-center" href="tel:{{info.phoneNumber}}">
+        <img src="../../../assets/img/icons/phone.png" alt="phone icon">
+      </a>
+      <figcaption class="d-flex justify-content-center">
+        <a href="tel:{{info.phoneNumber}}">{{info.phoneNumber}}<br><br></a>
+      </figcaption>
+    </figure>
+    <figure class="col">
+      <a class="d-flex justify-content-center" href="mailto:{{info.email}}">
+        <img src="../../../assets/img/icons/email.png" alt="email icon">
+      </a>
+      <figcaption class="d-flex justify-content-center">
+        <a href="mailto:{{info.email}}">{{info.email}}<br><br></a>
+      </figcaption>
+    </figure>
+    <figure class="col">
+      <a class="d-flex justify-content-center"
+        href="https://www.google.com/maps/dir//Polytechnique+Montr%C3%A9al,+2900+Edouard+Montpetit+Blvd,+Montreal,+QC+H3T+1J4,+Canada/@45.4790683,-73.7482601,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x4cc919f2a9fc4d71:0xda267ca95684133e!2m2!1d-73.6131831!2d45.5047939">
+        <img src="../../../assets/img/icons/location.png" alt="location icon">
+      </a>
+      <figcaption class="d-flex justify-content-center">
+        <a
+          href="https://www.google.com/maps/place/Saint-Laurent,+Montreal">
+          Saint-Laurent<br> Montréal, QC<br><br></a>
+      </figcaption>
+    </figure>
+    <!-- </section> -->
+  </div>
+  <!-- Contact Infos -->
+</div>

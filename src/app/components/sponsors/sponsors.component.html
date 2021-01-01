@@ -1,0 +1,148 @@
+<div>
+    <!-- Banner Image -->
+    <div class="row" style="margin: 0;">
+        <div class="col-md-12 mb-3" style="padding: 0;">
+            <div class="view overlay d-flex justify-content-center banner-img" style="max-height: 60vh;">
+                <img src="../../../assets/img/airport.png" alt="Team Image">
+            </div>
+        </div>
+        <!-- Card content -->
+        <div class="card-body card-body-cascade text-center">
+            <!-- Title -->
+            <h4 class="card-title"><strong>{{text.title}}</strong></h4>
+            <!-- Text -->
+            <h5 class="card-text" id="partners-text" *ngFor="let line of text.text">{{line}}<br></h5>
+        </div>
+    </div>
+    <!-- Banner Image -->
+
+    <div class="wrapper-not-top ">
+
+        <!-- Join Block -->
+        <div class="d-flex justify-content-center" id="download">
+
+            <button>
+                <a src="" target="_blank" href="http://google.com" style="color: inherit;"> {{text.download}}
+                </a>
+                </button>
+        </div>
+        <!-- Join Block -->
+
+        <!-- Gold Sponsors -->
+        <h3 class="category d-flex justify-content-center">{{text.sponsors[0].class}}</h3>
+        <div *ngFor="let element of text.sponsors[0].elements; let j = index" class="card-container">
+            <div class="row justify-content-center" *ngIf="j % 2 == 0">
+                <!-- Card Regular -->
+                <div class="card card-cascade sponsor-1">
+                    <!-- Card image -->
+                    <div class="view view-cascade overlay">
+                        <img class="card-img-top img-1" src="../../../assets/img/sponsors/{{text.sponsors[0].elements[j].pictureURL}}"
+                            alt="{{text.sponsors[0].elements[j].name}}">
+                        <a href="{{text.sponsors[0].elements[j].url}}" target="_blank">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    <!-- Card content -->
+                    <div class="card-body card-body-cascade text-center">
+                        <!-- Title -->
+                        <h4 class="card-title"><strong>{{text.sponsors[0].elements[j].name}}</strong></h4>
+                        <!-- Text -->
+                        <p class="card-text">{{text.sponsors[0].elements[j].description}}</p>
+                    </div>
+                </div>
+                <!-- Card Regular -->
+                <div *ngIf="j + 1 < text.sponsors[0].elements.length" class="col-md-4">
+                    <!-- Card Regular -->
+                    <div class="card card-cascade sponsor-1">
+                        <!-- Card image -->
+                        <div class="view view-cascade">
+                            <img src="../../../assets/img/sponsors/{{text.sponsors[0].elements[j+1].pictureURL}}"
+                                alt="{{text.sponsors[0].elements[j+1].name}}">
+                            <a href="{{text.sponsors[0].elements[j+1].url}}" target="_blank">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <!-- Card content -->
+                        <div class="card-body card-body-cascade text-center">
+                            <!-- Title -->
+                            <h4 class="card-title"><strong>{{text.sponsors[0].elements[j+1].name}}</strong></h4>
+                            <!-- Text -->
+                            <p class="card-text">{{text.sponsors[0].elements[j+1].description}}</p>
+                        </div>
+                    </div>
+                    <!-- Card Regular -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Silver Sponsors -->
+        <h3 class="category category d-flex justify-content-center">{{text.sponsors[1].class}}</h3>
+        <div *ngFor="let element of text.sponsors[1].elements; let j = index" style="margin-bottom: 20px;">
+            <div class="row row justify-content-center" *ngIf="j % 3 == 0">
+                <div *ngIf="j < text.sponsors[1].elements.length" class="col-md-3" style="margin-right: 3vw;">
+                    <!-- Card Regular -->
+                    <div class="card card-cascade sponsor-2">
+                        <!-- Card image -->
+                        <div class="view view-cascade overlay">
+                            <img class="card-img-top img-1" src="../../../assets/img/sponsors/{{text.sponsors[1].elements[j].pictureURL}}"
+                                alt="{{text.sponsors[1].elements[j].name}}">
+                            <a href="{{text.sponsors[1].elements[j].url}}" target="_blank">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <!-- Card content -->
+                        <div class="card-body card-body-cascade text-center">
+                            <!-- Title -->
+                            <h4 class="card-title"><strong>{{text.sponsors[1].elements[j].name}}</strong></h4>
+                            <!-- Text -->
+                            <p class="card-text">{{text.sponsors[1].elements[j].description}}</p>
+                        </div>
+                    </div>
+                    <!-- Card Regular -->
+                </div>
+                <div *ngIf="j + 1 < text.sponsors[1].elements.length" class="col-md-3" style="margin-right: 3vw;">
+                    <!-- Card Regular -->
+                    <div class="card card-cascade sponsor-2">
+                        <!-- Card image -->
+                        <div class="view view-cascade overlay">
+                            <img class="card-img-top img-1" src="../../../assets/img/sponsors/{{text.sponsors[1].elements[j+1].pictureURL}}"
+                                alt="{{text.sponsors[1].elements[j+1].name}}">
+                            <a href="{{text.sponsors[1].elements[j+1].url}}" target="_blank">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <!-- Card content -->
+                        <div class="card-body card-body-cascade text-center">
+                            <!-- Title -->
+                            <h4 class="card-title"><strong>{{text.sponsors[1].elements[j+1].name}}</strong></h4>
+                            <!-- Text -->
+                            <p class="card-text">{{text.sponsors[1].elements[j+1].description}}</p>
+                        </div>
+                    </div>
+                    <!-- Card Regular -->
+                </div>
+                <div *ngIf="j + 2 < text.sponsors[1].elements.length" class="col-md-3" style="margin-right: 3vw;">
+                    <!-- Card Regular -->
+                    <div class="card card-cascade sponsor-2">
+                        <!-- Card image -->
+                        <div class="view view-cascade overlay">
+                            <img class="card-img-top img-1" src="../../../assets/img/sponsors/{{text.sponsors[1].elements[j+2].pictureURL}}"
+                                alt="{{text.sponsors[1].elements[j+2].name}}">
+                            <a href="{{text.sponsors[1].elements[j+2].url}}" target="_blank">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <!-- Card content -->
+                        <div class="card-body card-body-cascade text-center">
+                            <!-- Title -->
+                            <h4 class="card-title"><strong>{{text.sponsors[1].elements[j+2].name}}</strong></h4>
+                            <!-- Text -->
+                            <p class="card-text">{{text.sponsors[1].elements[j+2].description}}</p>
+                        </div>
+                    </div>
+                    <!-- Card Regular -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

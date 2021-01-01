@@ -1,0 +1,81 @@
+<div class="wrapper">
+  <!--Section: Features v.3-->
+  <section>
+    <!--Section heading-->
+    <h2 class="h1 py-5 font-weight-bold text-center">{{text.question}}</h2>
+    <!--Section description-->
+    <!-- <p class="px-5 mb-5 pb-3 lead grey-text text-center"></p> -->
+    <!--Grid row-->
+    <div class="row pt-2">
+      <!--Grid column-->
+      <div class="col text-center text-lg-left ">
+        <img src="../../../assets/img/train.png" alt="Hyperloop Train Rendered" class="img-fluid z-depth-0"
+          id="img-feature">
+      </div>
+      <!--Grid column-->
+      <!--Grid column-->
+      <div class="col flex-column" > <!-- style="margin-top: auto; margin-bottom: auto;"--> 
+        <div class="col-10">
+          <h4 class="text-left" *ngFor="let feature of text.features">{{feature.detail}} <br></h4>
+        </div>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+
+    <h2 class="h1 py-5 font-weight-bold text-center">{{text.comp}}</h2>
+     <!--Grid row-->
+     <div class="row pt-2">
+      <!--Grid column-->
+      <div class="col flex-column" > <!-- style="margin-top: auto; margin-bottom: auto;" -->
+        <div class="col-10">
+          <h4 class="text-left" *ngFor="let element of text.compElements">{{element}} <br></h4>
+        </div>
+      </div>
+      <!--Grid column-->
+      <!--Grid column-->
+      <div class="col text-center text-lg-left ">
+        <img src="../../../assets/img/airport.png" alt="Hyperloop Montreal Airport Rendered" class="img-fluid z-depth-0"
+          id="img-feature">
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </section>
+  <!--Section: Features v.3-->
+
+  <!-- Timeline -->
+  <section class="timeline">
+    <div class="container">
+      <div *ngFor="let event of text.events; let i = index">
+        <div *ngIf="i % 2 == 0">
+          <!-- Left Items -->
+          <div class="timeline-item">
+            <div class="timeline-img"></div>
+            <div *ngIf="i < text.events.length" class="timeline-content js--fadeInLeft">
+              <div class="timeline-img-header" id="event-img-{{i}}">
+                <h2>{{text.events[i].title}}</h2>
+              </div>
+              <div class="date">{{text.events[i].date}}</div>
+              <p>{{text.events[i].text}}</p>
+            </div>
+          </div>
+          <!-- Left Items -->
+          <div class="timeline-item">
+            <div class="timeline-img"></div>
+            <!-- Right Items -->
+            <div *ngIf="i + 1 < text.events.length" class="timeline-content timeline-card js--fadeInRight">
+              <div class="timeline-img-header" id="event-img-{{i+1}}">
+                <h2>{{text.events[i+1].title}}</h2>
+              </div>
+              <div class="date">{{text.events[i+1].date}}</div>
+              <p>{{text.events[i+1].text}}</p>
+            </div>
+            <!-- Right Items -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Timeline -->
+</div>

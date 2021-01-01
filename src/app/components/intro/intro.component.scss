@@ -1,0 +1,62 @@
+#home-image {
+    background-image: url("../../../assets/img/intro.gif"); 
+    background-position: center center;
+    background-size: cover;
+    clip-path: circle(100vmax at 55% 65%); 
+    height: 86%;
+    left: 0;
+    opacity: 1; 
+    margin-top: 120px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 11;
+}
+
+.carousel {
+    height: 100vh;
+    min-height: 50vw;
+    padding-bottom: 0;
+    background: inherit;
+    position: relative;
+}
+
+.carousel-text {
+    top: 40%; 
+    left: 5%;
+    position: absolute;
+    overflow: hidden;
+
+    img {
+        float: left;
+        height: auto;
+        width: 40vw;
+    }
+
+    .carousel-subtext {
+        float: left;
+        margin-left: 10vw;
+        img {
+            height: auto;
+            width: 25vw;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .carousel-text {
+        top: 30%; 
+        left: 28%;
+        position: absolute;
+        overflow: hidden;
+    
+        img {
+            float: none;
+        }
+    
+        .carousel-subtext {
+            float: none;
+            margin-left: 30vw;
+        }
+    }
+}

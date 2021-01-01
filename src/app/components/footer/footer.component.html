@@ -1,0 +1,24 @@
+<!--
+  Free social media icons provided by https://icons8.com/
+-->
+<div class="row">
+    <div class="column">
+        <span>&copy; 2020 - By </span>
+        <a href="https://www.linkedin.com/in/joe-abdo/" alt="ABDO Joe LinkedIn" target="_blank">ABDO Joe</a>
+    </div>
+    <div class="column">
+        <a href="/home">
+            <img src="../../../assets/img/logo.png" id="logo" alt="MyTrashCam logo">
+        </a>
+    </div>
+    <div class="column">
+        <ul class=" social-list">
+            <li *ngFor="let social of socials">
+                <a href="{{social.link}}" class="an-icon" target="_blank">
+                    <img class="social-icon" src="{{social.iconSrc}}" title="{{social.title}}"
+                        alt="{{social.title}} Link">
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

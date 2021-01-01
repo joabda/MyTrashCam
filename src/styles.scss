@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.title {
+    color: black;
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 3vh;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding-top: 125px;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    min-height: 100vh;
+}
+
+.wrapper-not-top {
+    margin: 0 auto;
+    padding-top: 0;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    min-height: 100vh;
+}
+
+.banner-img {
+    width: 100%;
+}

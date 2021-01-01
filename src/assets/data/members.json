@@ -1,0 +1,90 @@
+[
+    [
+        {
+            "location": "Montreal, Canada",
+            "description": "Description EN Executive",
+            "members": [
+                {
+                    "name": "Myriam El Haddad",
+                    "pictureURL": "../../../assets/img/members/Myriam-ElHaddad.jpeg",
+                    "age": "22 years old",
+                    "instagram": "myriamhaddad4"
+                },
+                {
+                    "name": "Rebecca Aoun",
+                    "pictureURL": "../../../assets/img/members/Rebecca-Aoun.jpg",
+                    "age": "18 years old",
+                    "instagram": "rebecca_aoun"
+                },
+                {
+                    "name": "Noudar Ghailane",
+                    "pictureURL": "../../../assets/img/members/Noudar-Ghailane.jpg",
+                    "age": "18 years old",
+                    "instagram": "noudarghailane"
+                },
+                {
+                    "name": "Maude Couturier",
+                    "pictureURL": "../../../assets/img/members/Maude-Couturier.jpg",
+                    "age": "19 years old",
+                    "instagram": "maude.couturier"
+                }
+            ]
+        },
+        {
+            "location": "Beirut, Lebanon",
+            "description": "Description EN Propulsion",
+            "members": [
+                {
+                    "name": "GaelleEl Chidiac",
+                    "pictureURL": "../../../assets/img/members/Gaelle-ElChidiac.jpg",
+                    "age": "18 years old",
+                    "instagram": "gaellechid"
+                }
+            ]
+        }
+    ], 
+    [
+        {
+            "location": "Montréal, Canada",
+            "description": "Description FR Executif",
+            "members": [
+                {
+                    "name": "Myriam El Haddad",
+                    "pictureURL": "../../../assets/img/members/Myriam-ElHaddad.jpeg",
+                    "age": "22 ans",
+                    "instagram": "myriamhaddad4"
+                },
+                {
+                    "name": "Rebecca Aoun",
+                    "pictureURL": "../../../assets/img/members/Rebecca-Aoun.jpg",
+                    "age": "18 ans",
+                    "instagram": "rebecca_aoun"
+                },
+                {
+                    "name": "Noudar Ghailane",
+                    "pictureURL": "../../../assets/img/members/Noudar-Ghailane.jpg",
+                    "age": "18 ans",
+                    "instagram": "noudarghailane"
+                },
+                {
+                    "name": "Maude Couturier",
+                    "pictureURL": "../../../assets/img/members/Maude-Couturier.jpg",
+                    "age": "19 ans",
+                    "instagram": "maude.couturier"
+                }
+            ]
+        },
+        {
+            "location": "Beyrouth, Liban",
+            "description": "Description FR Propulsion",
+            "members": [
+                {
+                    "name": "GaelleEl Chidiac",
+                    "pictureURL": "../../../assets/img/members/Gaelle-ElChidiac.jpg",
+                    "age": "18 ans",
+                    "instagram": "gaellechid"
+                }
+            ]
+        }
+    ]
+]

@@ -1,0 +1,112 @@
+.sidenav-container {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .mat-drawer-content {
+    display: inline;
+  }
+
+  .mat-drawer-container {
+    background-color: transparent;
+  }
+
+  .toggler-example {
+    padding-top: 25px;
+  }
+  
+  .sidenav {
+    width: 200px;
+  }
+
+  li {
+    list-style: none;
+  }
+  
+  .sidenav .mat-toolbar {
+    background: inherit;
+  }
+  
+  .mat-toolbar.mat-primary {
+    background: transparent;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+  .scrolled {
+    background: none;
+    background-color: red;;
+  }
+  
+  .fill-remaining-space {
+    flex: 1 1 auto;
+  }
+
+  button:focus{
+    outline: none !important;
+  }
+  
+  .nav-but{
+    color: black;
+    display: table-cell;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    padding-top: 55px;
+    padding-left: 45px; // was 20px
+    text-decoration: none;
+    vertical-align: middle;
+  }
+
+  .nav-but:hover {
+    color: #57BBBF !important;
+  }
+
+  .nav-but-mobile {
+    color: black;
+    display: table-cell;
+    font-size: medium;
+    padding-top: 30px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  #logo{
+    padding-top: 45px;
+    width: 250px; 
+  }
+
+  #lang-img:hover{
+    cursor: pointer;
+  }
+  
+  #contact-us:hover {
+    color: white;
+    background: black;
+  }
+  
+.mat-drawer-container{ 
+  overflow: hidden; 
+}  
+
+@media screen and (max-width: 935px) {
+  #lang-img {
+    margin-left: 0px;
+  }
+}
+
+
+@media screen and (max-width: 392px) {
+  #lang-img {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 40px;
+  }
+
+  #logo {
+    width: 25vw;
+  }
+}
+
