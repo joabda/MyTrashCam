@@ -19,7 +19,7 @@ import { DataService } from './services/data/data.service';
 import { FooterComponent } from './components/footer/footer.component';
 import { ModelsComponent } from './components/models/models.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
-import { SponsorsComponent } from './components/sponsors/sponsors.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
@@ -36,7 +36,7 @@ import { MatMenuModule } from '@angular/material/menu';
     IntroComponent,
     ModelsComponent,
     NavBarComponent,
-    SponsorsComponent,
+    GalleryComponent,
     ContactUsComponent,
     AboutUsComponent,
     MilestonesComponent

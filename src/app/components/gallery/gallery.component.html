@@ -1,0 +1,39 @@
+<div class="wrapper">
+
+    <!-- Grid row -->
+    <div class="row" *ngFor="let pic of pictures; let i = index">
+
+        <!-- Grid column -->
+        <div *ngIf="i % 3 == 0 && pictures[i] != undefined " class="col-md-4 mx-auto my-5">
+            <a><img (click)="show(i)" class="img-fluid z-depth-1" src="{{pictures[i].pictureURL}}"
+                    alt="Photo of {{pictures[i].model}}"></a>
+                    <a href="/models/#{{pictures[i].model}}">
+            <h5 class="font-weight-bold mt-4 mb-3" style="text-align: center;">{{pictures[i].model}}</h5>
+        </a>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div *ngIf="i % 3 == 0 && pictures[i+1] != undefined " class="col-md-4 mx-auto my-5">
+            <a><img (click)="show(i+1)" class="img-fluid z-depth-1" src="{{pictures[i+1].pictureURL}}"
+                    alt="Photo of {{pictures[i+1].model}}"></a>
+                    <a href="/models/#{{pictures[i+1].model}}">
+                        <h5 class="font-weight-bold mt-4 mb-3" style="text-align: center;">{{pictures[i+1].model}}</h5>
+                    </a>
+            
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div *ngIf="i % 3 == 0 && pictures[i+2] != undefined " class="col-md-4 mx-auto my-5">
+            <a><img (click)="show(i+2)" class="img-fluid z-depth-1" src="{{pictures[i+2].pictureURL}}"
+                    alt="Photo of {{pictures[i+2].model}}"></a>
+                    <a href="/models/#{{pictures[i+2].model}}">
+            <h5 class="font-weight-bold mt-4 mb-3" style="text-align: center;">{{pictures[i+2].model}}</h5>
+        </a>
+        </div>
+        <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+</div>

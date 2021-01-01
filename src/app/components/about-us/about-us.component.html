@@ -57,21 +57,21 @@
                 <div *ngIf="i % 4 == 0" class="row justify-content-center">
                     <!-- Grid column -->
                     <div *ngIf="i < teams.length" class="col-lg-3 col-md-6 mb-lg-0 mb-5">
-                        <a href="/team/#{{team.location}}">
+                        <a href="/models/#{{team.location}}">
                             <h3>{{team.location}}</h3>
                         </a>
                     </div>
                     <!-- Grid column -->
                     <!-- Grid column -->
                     <div *ngIf="i + 1 < teams.length" class="col-lg-3 col-md-6 mb-lg-0 mb-5">
-                        <a href="/team/#{{teams[i + 1].location}}">
+                        <a href="/models/#{{teams[i + 1].location}}">
                             <h3>{{teams[i + 1].location}}</h3>
                         </a>
                     </div>
                     <!-- Grid column -->
                     <!-- Grid column -->
                     <div *ngIf="i + 2 < teams.length" class="col-lg-3 col-md-6 mb-lg-0 mb-5">
-                        <a href="/team/#{{teams[i + 2].location}}">
+                        <a href="/models/#{{teams[i + 2].location}}">
                             <h3>{{teams[i + 2].location}}</h3>
                         </a>
                     </div>
