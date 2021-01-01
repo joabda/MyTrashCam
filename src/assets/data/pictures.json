@@ -2,35 +2,49 @@
     {
         "pictureURL": "../../../assets/img/pictures/photo1.jpg",
         "model": "Maude Couturier",
+        "modelSex": "Female",
         "location": "Sherbrook",
         "locationLink": "https://www.google.com/maps/place/Sherbrooke/@45.5579564,-73.870386,11z/data=!4m8!1m2!2m1!1ssherbrook+download+montreal!3m4!1s0x4cc91bb598e80e15:0x36b6ed0de907bfc3!8m2!3d45.518225!4d-73.5682609"
     },
     {
         "pictureURL": "../../../assets/img/pictures/photo2.jpg",
         "model": "Rebecca Aoun",
+        "modelSex": "Female",
         "location": "Mont Royal",
         "locationLink": "https://www.google.com/maps/place/Mount+Royal"
     },    
     {
         "pictureURL": "../../../assets/img/pictures/photo1.jpg",
-        "model": "Maude Couturier"
+        "model": "Maude Couturier",
+        "modelSex": "Female",
+        "location": "Sherbrook"
     },
     {
         "pictureURL": "../../../assets/img/pictures/photo2.jpg",
-        "model": "Rebecca Aoun"
+        "model": "Rebecca Aoun",
+        "modelSex": "Female",
+        "location": "Sherbrook"
     },    {
         "pictureURL": "../../../assets/img/pictures/photo1.jpg",
-        "model": "Maude Couturier"
+        "model": "Maude Couturier",
+        "modelSex": "Female",
+        "location": "Sherbrook"
     },
     {
         "pictureURL": "../../../assets/img/pictures/photo2.jpg",
-        "model": "Rebecca Aoun"
+        "model": "Rebecca Aoun",
+        "modelSex": "Female",
+        "location": "Sherbrook"
     },    {
         "pictureURL": "../../../assets/img/pictures/photo1.jpg",
-        "model": "Maude Couturier"
+        "model": "Maude Couturier",
+        "modelSex": "Female",
+        "location": "Sherbrook"
     },
     {
         "pictureURL": "../../../assets/img/pictures/photo2.jpg",
-        "model": "Rebecca Aoun"
+        "model": "Rebecca Aoun",
+        "modelSex": "Female",
+        "location": "Sherbrook"
     }
 ]

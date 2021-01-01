@@ -1,8 +1,8 @@
 <form>
     <!-- Search form model's Name-->
     <div class="md-form active-pink-2 mb-3">
-        <input class="form-control" type="search" id="search-name" [formControl]="modelsControl"
-            [matAutocomplete]="names" mdbInput>
+        <input (ngModelChange)="updateFilter(0, $event)" class="form-control" type="search" id="search-name"
+            name="search-name" [formControl]="modelsControl" [matAutocomplete]="names" mdbInput>
         <label for="search-name">{{text.name}}</label>
 
         <mat-autocomplete #names="matAutocomplete">
@@ -13,8 +13,9 @@
 
     <!-- Search form model's Region-->
     <div class="md-form active-purple-2 mb-3">
-        <input class="form-control" type="search" id="search-region" [formControl]="regionsControl"
-            [matAutocomplete]="regions" mdbInput>
+        <input (ngModelChange)="updateFilter(1, $event)" class="form-control" type="search"
+            id="search-region" name="search-regiopn" [formControl]="regionsControl" [matAutocomplete]="regions"
+            mdbInput>
         <label for="search-region">{{text.region}}</label>
 
         <mat-autocomplete #regions="matAutocomplete">
@@ -24,10 +25,11 @@
     <!-- Search form model's Region-->
 
     <!-- Search form model's sex-->
-    <div class="md-form active-cyan-2 mb-3">
-        <select class="form-control" type="select" id="search-sex" aria-label="Search by Sex" mdbSelect>
+    <!-- <div class="md-form active-cyan-2 mb-3">
+        <select #s (change)="updateFilter(2, s.value)" class="form-control" type="select" id="search-sex"
+            name="search-sex" mdbSelect>
             <option *ngFor="let s of text.sexOptions" value="{{s}}">{{s}}</option>
         </select>
-    </div>
+    </div> -->
     <!-- Search form model's sex-->
 </form>

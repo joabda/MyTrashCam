@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Observable } from 'rxjs';
-import { filter, map, startWith } from 'rxjs/operators';
+import { map, startWith } from 'rxjs/operators';
 import { FilterBarJSON } from 'src/app/interfaces/json/filterBarJSON';
 import { PictureJSON } from 'src/app/interfaces/json/pictureJSON';
 import { DataService } from 'src/app/services/data/data.service';
+import { FilterService } from 'src/app/services/filter/filter.service';
 
 @Component({
   selector: 'app-filter-bar',
@@ -22,7 +23,7 @@ export class FilterBarComponent implements OnInit{
   filteredModelName: Observable<string[]>;
   filteredRegions: Observable<string[]>;
 
-  constructor(public data: DataService) {
+  constructor(public data: DataService, private filter: FilterService) {
     data.language.subscribe( () => {
       this.text = data.getFilterBarText();
       this.pictures = data.getPictures();
@@ -42,7 +43,6 @@ export class FilterBarComponent implements OnInit{
     }
     this.modelsNames.sort();
     this.regions.sort();
-    console.log(this.regions)
   }
 
   ngOnInit() {
@@ -54,6 +54,25 @@ export class FilterBarComponent implements OnInit{
       startWith(''),
       map(value => this._filter(this.regions, value))
     );
+  }
+
+  updateFilter(changedFilter: number, newValue: string): void {
+    switch(changedFilter) { 
+      case 0: { 
+        this.filter.name.next(newValue.toLowerCase());
+        break; 
+      } 
+      case 1: { 
+        this.filter.region.next(newValue.toLowerCase());
+         break; 
+      } 
+      case 2: {
+        if(newValue !== "Sexe" && newValue !== "Gender"){
+          this.filter.sex.next(newValue);
+        }
+         break; 
+      } 
+   } 
   }
 
   private _filter(array: Array<string>, value: string): string[] {

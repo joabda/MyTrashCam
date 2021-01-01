@@ -2,40 +2,40 @@
     <app-filter-bar></app-filter-bar>
 
     <!-- Grid row -->
-    <div class="row" *ngFor="let pic of pictures; let i = index">
+    <div class="row" *ngFor="let pic of filteredPictures; let i = index">
 
         <!-- Grid column -->
-        <div *ngIf="i % 3 == 0 && pictures[i] != undefined " class="col-md-4 mx-auto my-5">
-            <a><img (click)="show(i)" class="img-fluid z-depth-1" src="{{pictures[i].pictureURL}}"
-                    alt="Photo of {{pictures[i].model}}"></a>
-                <a href="/models/#{{pictures[i].model}}">
-                    <h5 class="font-weight-bold mt-4 mb-3" style="text-align: center;">{{pictures[i].model}}</h5>
+        <div *ngIf="i % 3 == 0 && filteredPictures[i] != undefined " class="col-md-4 mx-auto my-5">
+            <a><img (click)="show(i)" class="img-fluid z-depth-1" src="{{filteredPictures[i].pictureURL}}"
+                    alt="Photo of {{filteredPictures[i].model}}"></a>
+                <a href="/models/#{{filteredPictures[i].model}}">
+                    <h5 class="font-weight-bold mt-4 mb-3" style="text-align: center;">{{filteredPictures[i].model}}</h5>
                 </a>
                 <!-- location -->
-                <!-- <a class="p-2 fa-lg fb-ic location" href="{{pictures[i].locationLink}}" style="align-items: center;" target="_blank">
+                <!-- <a class="p-2 fa-lg fb-ic location" href="{{filteredPictures[i].locationLink}}" style="align-items: center;" target="_blank">
                     <mdb-icon fas icon="map-marker"  class="blue-text"> </mdb-icon>
-                    <h5 class="font-weight-bold mt-4 mb-3" style="text-align: center;">{{pictures[i].location}}</h5>
+                    <h5 class="font-weight-bold mt-4 mb-3" style="text-align: center;">{{filteredPictures[i].location}}</h5>
                 </a> -->
         </div>
         <!-- Grid column -->
 
         <!-- Grid column -->
-        <div *ngIf="i % 3 == 0 && pictures[i+1] != undefined " class="col-md-4 mx-auto my-5">
-            <a><img (click)="show(i+1)" class="img-fluid z-depth-1" src="{{pictures[i+1].pictureURL}}"
-                    alt="Photo of {{pictures[i+1].model}}"></a>
-            <a href="/models/#{{pictures[i+1].model}}">
-                <h5 class="font-weight-bold mt-4 mb-3" style="text-align: center;">{{pictures[i+1].model}}</h5>
+        <div *ngIf="i % 3 == 0 && filteredPictures[i+1] != undefined " class="col-md-4 mx-auto my-5">
+            <a><img (click)="show(i+1)" class="img-fluid z-depth-1" src="{{filteredPictures[i+1].pictureURL}}"
+                    alt="Photo of {{filteredPictures[i+1].model}}"></a>
+            <a href="/models/#{{filteredPictures[i+1].model}}">
+                <h5 class="font-weight-bold mt-4 mb-3" style="text-align: center;">{{filteredPictures[i+1].model}}</h5>
             </a>
 
         </div>
         <!-- Grid column -->
 
         <!-- Grid column -->
-        <div *ngIf="i % 3 == 0 && pictures[i+2] != undefined " class="col-md-4 mx-auto my-5">
-            <a><img (click)="show(i+2)" class="img-fluid z-depth-1" src="{{pictures[i+2].pictureURL}}"
-                    alt="Photo of {{pictures[i+2].model}}"></a>
-            <a href="/models/#{{pictures[i+2].model}}">
-                <h5 class="font-weight-bold mt-4 mb-3" style="text-align: center;">{{pictures[i+2].model}}</h5>
+        <div *ngIf="i % 3 == 0 && filteredPictures[i+2] != undefined " class="col-md-4 mx-auto my-5">
+            <a><img (click)="show(i+2)" class="img-fluid z-depth-1" src="{{filteredPictures[i+2].pictureURL}}"
+                    alt="Photo of {{filteredPictures[i+2].model}}"></a>
+            <a href="/models/#{{filteredPictures[i+2].model}}">
+                <h5 class="font-weight-bold mt-4 mb-3" style="text-align: center;">{{filteredPictures[i+2].model}}</h5>
             </a>
         </div>
         <!-- Grid column -->
