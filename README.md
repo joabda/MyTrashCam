@@ -40,3 +40,12 @@ You can also use `ng g directive|pipe|service|class|guard|interface|enum|module 
 -   Execute `npm run lint`.
 
 -   Execute `npm run lint -- --fix` or `yarn lint --fix` to automatically resolve certain lint errors.
+
+## Authors
+
+* **Joe ABDO** - *Initial work* - [PurpleBooth](https://github.com/joabda)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
