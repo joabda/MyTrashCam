@@ -26,30 +26,23 @@
         ],
         "events": [
             {
-                "date": "August 2013",
-                "title": "The birth",
-                "text": "Elon Musk proposes the Hyperloop project in California",
+                "date": "2002",
+                "title": "Birth",
+                "text": "Day of my birth",
                 "more": "bla 1",
                 "imgSrc": ""
             },
             {
-                "date": "January 2015",
-                "title": "Un Titre....",
-                "text": "Announcement of the construction of a test track for Hyperloop capsules open to businesses and students",
+                "date": "May 2019",
+                "title": "First Diploma",
+                "text": "Done with studying in Lebanon",
                 "more": "bla 1",
                 "imgSrc": ""
             },
             {
-                "date": "January 2017",
-                "title": "A first",
-                "text": "First edition of the Hyperloop Pod Competition takes place",
-                "more": "bla 1",
-                "imgSrc": ""
-            },
-            {
-                "date": "January 2020",
-                "title": "Hyperloop at Poly",
-                "text": "Creation of PolyLoop",
+                "date": "August 2020",
+                "title": "To Canada",
+                "text": "Moving to Canada",
                 "more": "bla 1",
                 "imgSrc": ""
             }
@@ -77,30 +70,23 @@
         ],
         "events": [
             {
-                "date": "Août 2013",
-                "title": "La naissance",
-                "text": "Elon Musk propose le projet Hyperloop en Californie ",
+                "date": "2002",
+                "title": "Naissance",
+                "text": "Le jour de ma naissance",
                 "more": "bla 1",
                 "imgSrc": ""
             },
             {
-                "date": "Janvier 2015",
-                "title": "Première compétition",
-                "text": "Annonce de la construction d’une piste d’essai pour capsules Hyperloop ouverte aux entreprises et étudiants ",
+                "date": "Mai 2019",
+                "title": "Premier Diplome",
+                "text": "Fin de mes etudes au Liban",
                 "more": "bla 1",
                 "imgSrc": ""
             },
             {
-                "date": "Janvier 2017",
+                "date": "Aout 2020",
                 "title": "Une première",
-                "text": "Première édition du Hyperloop Pod Competition a lieu",
-                "more": "bla 1",
-                "imgSrc": ""
-            },
-            {
-                "date": "Janvier 2020",
-                "title": "Hyperloop a Poly",
-                "text": "Création de PolyLoop",
+                "text": "Debut des etudes au Canada",
                 "more": "bla 1",
                 "imgSrc": ""
             }
