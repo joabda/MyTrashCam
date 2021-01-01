@@ -1,0 +1,2 @@
+# MyTrashCam
+MyTrashcam website
