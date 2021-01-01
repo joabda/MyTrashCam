@@ -3,7 +3,7 @@ import { HistoryJSON } from 'src/app/interfaces/json/historyJSON';
 import { DataService } from 'src/app/services/data/data.service';
 
 @Component({
-  selector: 'app-hyperloop',
+  selector: 'app-milestones',
   templateUrl: './milestones.component.html',
   styleUrls: ['./milestones.component.scss']
 })

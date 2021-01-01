@@ -6,7 +6,7 @@ import { TeamJSON } from 'src/app/interfaces/json/teamJSON';
 import { Language } from 'src/app/enums/language';
 
 @Component({
-  selector: 'app-members',
+  selector: 'app-models',
   templateUrl: './models.component.html',
   styleUrls: ['./models.component.scss']
 })

@@ -5,7 +5,7 @@ import { DataService } from 'src/app/services/data/data.service';
 
 
 @Component({
-  selector: 'app-sponsors',
+  selector: 'app-gallery',
   templateUrl: './gallery.component.html',
   styleUrls: ['./gallery.component.scss']
 })
