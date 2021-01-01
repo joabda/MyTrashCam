@@ -1,0 +1,33 @@
+<form>
+    <!-- Search form model's Name-->
+    <div class="md-form active-pink-2 mb-3">
+        <input class="form-control" type="search" id="search-name" [formControl]="modelsControl"
+            [matAutocomplete]="names" mdbInput>
+        <label for="search-name">{{text.name}}</label>
+
+        <mat-autocomplete #names="matAutocomplete">
+            <mat-option *ngFor="let option of filteredModelName | async" [value]="option">{{option}}</mat-option>
+        </mat-autocomplete>
+    </div>
+    <!-- Search form model's Name-->
+
+    <!-- Search form model's Region-->
+    <div class="md-form active-purple-2 mb-3">
+        <input class="form-control" type="search" id="search-region" [formControl]="regionsControl"
+            [matAutocomplete]="regions" mdbInput>
+        <label for="search-region">{{text.region}}</label>
+
+        <mat-autocomplete #regions="matAutocomplete">
+            <mat-option *ngFor="let option of filteredRegions | async" [value]="option">{{option}}</mat-option>
+        </mat-autocomplete>
+    </div>
+    <!-- Search form model's Region-->
+
+    <!-- Search form model's sex-->
+    <div class="md-form active-cyan-2 mb-3">
+        <select class="form-control" type="select" id="search-sex" aria-label="Search by Sex" mdbSelect>
+            <option *ngFor="let s of text.sexOptions" value="{{s}}">{{s}}</option>
+        </select>
+    </div>
+    <!-- Search form model's sex-->
+</form>

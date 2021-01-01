@@ -1,0 +1,21 @@
+[
+    {
+        "name": "Search with Model's Name",
+        "region": "Select Region",
+        "sexOptions": [
+            "Gender",
+            "Male",
+            "Female"
+        ]
+    },
+    {
+        "name": "Rechercher avec le nom du model",
+        "region": "Rechercher par region",
+        "sexOptions": [
+            "Sexe",
+            "Male",
+            "Femelle"
+        ]
+
+    }
+]

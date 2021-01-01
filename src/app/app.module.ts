@@ -27,6 +27,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MilestonesComponent } from './components/milestones/milestones.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatMenuModule } from '@angular/material/menu';
+import { FilterBarComponent } from './components/filter-bar/filter-bar.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { MatMenuModule } from '@angular/material/menu';
     GalleryComponent,
     ContactUsComponent,
     AboutUsComponent,
-    MilestonesComponent
+    MilestonesComponent,
+    FilterBarComponent
   ],
   imports: [
     BrowserModule,
