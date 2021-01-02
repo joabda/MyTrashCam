@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Title } from 'src/app/interfaces/titles';
 import { Language } from 'src/app/enums/language';
 import { BehaviorSubject } from 'rxjs';
-import { ContactUsJSON } from 'src/app/interfaces/json/contactUsJSON';
+import { ContactUsJSON } from 'src/app/interfaces/json/ContactUsJSON';
 import { HistoryJSON } from 'src/app/interfaces/json/historyJSON';
 import { TeamJSON } from 'src/app/interfaces/json/teamJSON';
 import { PictureJSON } from 'src/app/interfaces/json/pictureJSON';

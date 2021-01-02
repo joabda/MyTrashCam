@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { DataService } from 'src/app/services/data/data.service';
-import { ContactUsJSON } from 'src/app/interfaces/json/contactUsJSON';
+import { ContactUsJSON } from 'src/app/interfaces/json/ContactUsJSON';
 import { HttpStatus } from 'src/app/enums/http-codes';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import * as _info from 'src/assets/data/infos.json'
