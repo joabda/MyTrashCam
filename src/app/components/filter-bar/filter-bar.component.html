@@ -1,7 +1,7 @@
 <form>
     <!-- Search form model's Name-->
     <div class="md-form active-pink-2 mb-3">
-        <input (ngModelChange)="updateFilter(0, $event)" class="form-control" type="search" id="search-name"
+        <input #searchName (ngModelChange)="updateFilter(0, $event)" class="form-control" type="search" id="search-name"
             name="search-name" [formControl]="modelsControl" [matAutocomplete]="names" mdbInput>
         <label for="search-name">{{text.name}}</label>
 
@@ -13,7 +13,7 @@
 
     <!-- Search form model's Region-->
     <div class="md-form active-purple-2 mb-3">
-        <input (ngModelChange)="updateFilter(1, $event)" class="form-control" type="search"
+        <input #searchRegion (ngModelChange)="updateFilter(1, $event)" class="form-control" type="search"
             id="search-region" name="search-regiopn" [formControl]="regionsControl" [matAutocomplete]="regions"
             mdbInput>
         <label for="search-region">{{text.region}}</label>

@@ -1,8 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { Subscription } from 'rxjs/internal/Subscription';
 import { FilterOption } from 'src/app/interfaces/filter';
 import { PictureJSON } from 'src/app/interfaces/json/pictureJSON';
 import { DataService } from 'src/app/services/data/data.service';
 import { FilterService } from 'src/app/services/filter/filter.service';
+import { HotkeysService } from 'src/app/services/hotkeys/hotkeys.service';
+import { FilterBarComponent } from '../filter-bar/filter-bar.component';
 
 
 @Component({
@@ -10,12 +13,16 @@ import { FilterService } from 'src/app/services/filter/filter.service';
   templateUrl: './gallery.component.html',
   styleUrls: ['./gallery.component.scss']
 })
-export class GalleryComponent {
+export class GalleryComponent implements OnInit, OnDestroy{
+
+  @ViewChild(FilterBarComponent) filterBar: FilterBarComponent;
 
   pictures: PictureJSON[];
   filteredPictures: PictureJSON[];
+  private subscriptions: Subscription[] = [];
 
-  constructor(public data: DataService, private filter: FilterService) {
+  constructor(public data: DataService, private filter: FilterService, 
+    private shortcuts: HotkeysService) {
     data.language.subscribe(() => this.pictures = data.getPictures());
     this.filteredPictures = new Array<PictureJSON>();
     filter.filterOptions.subscribe(() => {
@@ -24,6 +31,27 @@ export class GalleryComponent {
       this.pictures.forEach(val => this.filteredPictures.push(Object.assign({}, val)));
       this.filtering(filter.filterOptions.value);
     })
+  }
+
+  ngOnInit() {
+    this.subscriptions.push(this.shortcuts.addShortcut({ keys: "control.f", description: "Search by name" }).subscribe( () => {
+      this.filterBar.searchByName.nativeElement.focus();
+    }));
+
+    this.subscriptions.push(this.shortcuts.addShortcut({ keys: "tab", description: "Next Search Field" }).subscribe((_event) => {
+      if(document.activeElement === this.filterBar.searchByName.nativeElement) {
+        this.filterBar.searchByRegion.nativeElement.focus();
+      } else {
+        this.filterBar.searchByName.nativeElement.focus();
+      }
+    }));
+  }
+
+  ngOnDestroy(): void {
+    for (let i: number = this.subscriptions.length - 1; i >= 0; --i) {
+      this.subscriptions[i].unsubscribe();
+      this.subscriptions.pop();
+    }
   }
 
   private filtering(opts: FilterOption): void {

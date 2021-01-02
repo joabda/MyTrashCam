@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
@@ -14,6 +14,8 @@ import { FilterService } from 'src/app/services/filter/filter.service';
 })
 export class FilterBarComponent implements OnInit{
 
+  @ViewChild("searchName") searchByName: ElementRef;
+  @ViewChild("searchRegion") searchByRegion: ElementRef;
   text: FilterBarJSON;
   pictures: PictureJSON[];
   modelsNames: Array<string>;

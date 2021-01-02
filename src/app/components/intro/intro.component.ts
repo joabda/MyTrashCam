@@ -1,4 +1,4 @@
-import { Component, OnDestroy } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs/internal/Subscription';
 import { HotkeysService } from 'src/app/services/hotkeys/hotkeys.service';
 
@@ -7,13 +7,13 @@ import { HotkeysService } from 'src/app/services/hotkeys/hotkeys.service';
   templateUrl: './intro.component.html',
   styleUrls: ['./intro.component.scss']
 })
-export class IntroComponent implements OnDestroy {
+export class IntroComponent implements OnInit, OnDestroy {
 
   static TIME_IN_SECONDS: number = 1.5;
   static NUMBER_OF_IMAGES: number = 8;
   private counter: number = 0;
   private subscriptions: Subscription[] = [];
-  private timer: NodeJS.Timer;
+  private timer: any; // type: NodeJs.timer
   private timerIsOn: boolean;
 
   constructor(private shortcuts: HotkeysService) {
@@ -44,7 +44,7 @@ export class IntroComponent implements OnDestroy {
     }
   }
   
-  private setTimer(): NodeJS.Timer{
+  private setTimer(): any{ // returns NodeJs.timer
     return setInterval(() => { this.changeImage(this.getNext()) }, IntroComponent.TIME_IN_SECONDS * 1000);
   }
 
