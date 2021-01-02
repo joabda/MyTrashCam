@@ -2,19 +2,17 @@ import { Injectable } from '@angular/core';
 import { Title } from 'src/app/interfaces/titles';
 import { Language } from 'src/app/enums/language';
 import { BehaviorSubject } from 'rxjs';
-import { ContactUsJSON } from 'src/app/interfaces/json/ContactUsJSON';
-import { AboutJSON } from 'src/app/interfaces/json/aboutJSON';
+import { ContactUsJSON } from 'src/app/interfaces/json/contactUsJSON';
 import { HistoryJSON } from 'src/app/interfaces/json/historyJSON';
-import * as _titles from 'src/assets/data/titles.json';
-import * as _pictures from 'src/assets/data/pictures.json';
-import * as _contactUs from 'src/assets/data/contact-us.json';
-import * as _about from 'src/assets/data/about.json';
-import * as _history from 'src/assets/data/history.json';
-import * as _members from '../../../assets/data/members.json';
-import * as _filterBar from '../../../assets/data/filterBar.json';
 import { TeamJSON } from 'src/app/interfaces/json/teamJSON';
 import { PictureJSON } from 'src/app/interfaces/json/pictureJSON';
 import { FilterBarJSON } from 'src/app/interfaces/json/filterBarJSON';
+import * as _titles from 'src/assets/data/titles.json';
+import * as _pictures from 'src/assets/data/pictures.json';
+import * as _contactUs from 'src/assets/data/contact-us.json';
+import * as _history from 'src/assets/data/history.json';
+import * as _members from '../../../assets/data/members.json';
+import * as _filterBar from '../../../assets/data/filterBar.json';
 
 @Injectable()
 export class DataService {
@@ -23,7 +21,6 @@ export class DataService {
   currentSections: string[];
   static titles_ = (_titles as any).default as Title[];
   static contactUs_ = (_contactUs as any).default as ContactUsJSON[];
-  static about_ = (_about as any).default as AboutJSON[];
   static filterBar_: any[] = (_filterBar as any).default as FilterBarJSON[];
   static pictures_: any = (_pictures as any).default;
   static history_ = (_history as any).default as HistoryJSON[];
@@ -63,10 +60,6 @@ export class DataService {
 
   getContactUs(): ContactUsJSON {
     return DataService.contactUs_[this.language.value];
-  }
-
-  getAbout(): AboutJSON {
-    return DataService.about_[this.language.value];
   }
 
   getSent(): string {

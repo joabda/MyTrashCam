@@ -6,7 +6,6 @@ import { MatDialog } from '@angular/material/dialog';
 import { DataService } from 'src/app/services/data/data.service';
 import { Language } from 'src/app/enums/language';
 import { Title } from '@angular/platform-browser';
-import { link } from 'fs';
 
 @Component({
   selector: 'app-nav-bar',
