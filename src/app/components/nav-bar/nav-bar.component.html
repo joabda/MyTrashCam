@@ -21,7 +21,7 @@
             </a>
             <nav class="nav nav-pills flex-column flex-sm-row" *ngIf="isBigScreen">
                 <li *ngFor="let link of links; let i = index">
-                    <a *ngIf="i < 5" type="button" class="nav-but" id="{{i}}" (click)="changePage(i)" routerLink="{{link.href}}">{{link.name}}</a>
+                    <a *ngIf="i < 5" type="button" class="nav-but" id="{{i}}" (click)="changeTitle(i)" routerLink="{{link.href}}">{{link.name}}</a>
                 </li>
                 <li>
                     <button type="button" class="nav-but" [matMenuTriggerFor]="menu"

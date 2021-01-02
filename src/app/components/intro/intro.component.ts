@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class IntroComponent {
 
-  static TIME_IN_SECONDS: number = 1;
+  static TIME_IN_SECONDS: number = 1.5;
   static NUMBER_OF_IMAGES: number = 8;
   private counter: number = 0;
 

@@ -1,8 +1,7 @@
 form {
     margin: auto;
-    width: 30vw;
+    width: 40vw;
 }
-
 
 .active-pink-2 input[type=search]:focus:not([readonly]) {
     border-bottom: 1px solid #f48fb1;
@@ -32,4 +31,11 @@ form {
 .active-cyan input[type=search] {
     border-bottom: 1px solid #4dd0e1;
     box-shadow: 0 1px 0 0 #4dd0e1;
+}
+
+@media screen and (max-width: 900px) {
+    form {
+        margin: auto;
+        width: 75vw;
+    }
 }
