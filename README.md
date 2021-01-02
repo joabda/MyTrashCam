@@ -29,12 +29,6 @@ Using angular CLI:
 
 You can also use `ng g directive|pipe|service|class|guard|interface|enum|module nameOfWhatYouWant` for other parts of yout project.
 
-## Unit testing
-
--   Execute `npm run test` or `yarn test`.
-
--   Execute `npm run coverage` or `yarn coverage` to generate coverage report.
-
 ## TSLint
 
 -   Execute `npm run lint`.
