@@ -2,7 +2,6 @@
     [
         {
             "location": "Montreal, Canada",
-            "description": "Description EN Executive",
             "members": [
                 {
                     "name": "Myriam El Haddad",
@@ -28,18 +27,59 @@
                     "pictureURL": "../../../assets/img/members/Maude-Couturier.jpg",
                     "age": "19 years old",
                     "instagram": "maude.couturier"
+                },
+                {
+                    "name": "Perla Andaros",
+                    "pictureURL": "../../../assets/img/members/Perla-Andraos.jpg",
+                    "age": "24 years old",
+                    "instagram": "perlaandraos"
+                },
+                {
+                    "name": "Bocar Ba",
+                    "pictureURL": "../../../assets/img/members/Bocar-Ba.jpg",
+                    "age": "18 years old",
+                    "instagram": "thebocar"
                 }
             ]
         },
         {
             "location": "Beirut, Lebanon",
-            "description": "Description EN Propulsion",
             "members": [
                 {
                     "name": "GaelleEl Chidiac",
                     "pictureURL": "../../../assets/img/members/Gaelle-ElChidiac.jpg",
                     "age": "18 years old",
                     "instagram": "gaellechid"
+                },
+                {
+                    "name": "Amar sakr",
+                    "pictureURL": "../../../assets/img/members/Amar-Sakr.jpg",
+                    "age": "18 years old",
+                    "instagram": "amarsakr"
+                },
+                {
+                    "name": "Mosleh Bouery",
+                    "pictureURL": "../../../assets/img/members/Mosleh-Bouery.jpg",
+                    "age": "18 years old",
+                    "instagram": "moslehbouery",
+                    "email": "moslehbouery@gmail.com"
+                },
+                {
+                    "name": "Mitsa Karim",
+                    "pictureURL": "../../../assets/img/members/Mitsa-Karim.jpg",
+                    "age": "18 years old",
+                    "instagram": "mittssa"
+                }
+            ]
+        },
+        {
+            "location": "Paris, France",
+            "members": [
+                {
+                    "name": "Clara Daccache",
+                    "pictureURL": "../../../assets/img/members/Clara-Daccache.jpg",
+                    "age": "18 years old",
+                    "instagram": "claradaccache_"
                 }
             ]
         }
@@ -47,7 +87,6 @@
     [
         {
             "location": "Montréal, Canada",
-            "description": "Description FR Executif",
             "members": [
                 {
                     "name": "Myriam El Haddad",
@@ -73,18 +112,59 @@
                     "pictureURL": "../../../assets/img/members/Maude-Couturier.jpg",
                     "age": "19 ans",
                     "instagram": "maude.couturier"
+                },
+                {
+                    "name": "Perla Andaros",
+                    "pictureURL": "../../../assets/img/members/Perla-Andraos.jpg",
+                    "age": "24 ans",
+                    "instagram": "perlaandraos"
+                },
+                {
+                    "name": "Bocar Ba",
+                    "pictureURL": "../../../assets/img/members/Bocar-Ba.jpg",
+                    "age": "18 ans",
+                    "instagram": "thebocar"
                 }
             ]
         },
         {
-            "location": "Beyrouth, Liban",
-            "description": "Description FR Propulsion",
+            "location": "Beirut, Lebanon",
             "members": [
                 {
                     "name": "GaelleEl Chidiac",
                     "pictureURL": "../../../assets/img/members/Gaelle-ElChidiac.jpg",
                     "age": "18 ans",
                     "instagram": "gaellechid"
+                },
+                {
+                    "name": "Amar sakr",
+                    "pictureURL": "../../../assets/img/members/Amar-Sakr.jpg",
+                    "age": "18 ans",
+                    "instagram": "amarsakr"
+                },
+                {
+                    "name": "Mosleh Bouery",
+                    "pictureURL": "../../../assets/img/members/Mosleh-Bouery.jpg",
+                    "age": "18 ans",
+                    "instagram": "moslehbouery",
+                    "email": "moslehbouery@gmail.com"
+                },
+                {
+                    "name": "Mitsa Karim",
+                    "pictureURL": "../../../assets/img/members/Mitsa-Karim.jpg",
+                    "age": "18 ans",
+                    "instagram": "mittssa"
+                }
+            ]
+        },
+        {
+            "location": "Paris, France",
+            "members": [
+                {
+                    "name": "Clara Daccache",
+                    "pictureURL": "../../../assets/img/members/Clara-Daccache.jpg",
+                    "age": "18 ans",
+                    "instagram": "claradaccache_"
                 }
             ]
         }

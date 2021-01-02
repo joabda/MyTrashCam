@@ -26,8 +26,8 @@
                     <div *ngIf="i < team.members.length" class="col-lg-3 col-md-6 mb-lg-0 mb-5">
                         <div class="avatar mx-auto">
                             <a name="{{team.members[i].name}}"></a>
-                            <img [src]="team.members[i].pictureURL"
-                                class="rounded-circle z-depth-1" alt="Sample avatar">
+                            <img [src]="team.members[i].pictureURL" class="rounded-circle z-depth-1 fixed-size"
+                                alt="Sample avatar">
                         </div>
                         <h5 class="font-weight-bold mt-4 mb-3">{{team.members[i].name}}</h5>
                         <p class="text-uppercase blue-text">
@@ -35,12 +35,14 @@
                         </p>
                         <ul class="list-unstyled mb-0">
                             <!-- instagram -->
-                            <a *ngIf="team.members[i].instagram !== undefined" class="p-2 fa-lg fb-ic" href="https://instagram.com/{{team.members[i].instagram}}"  target="_blank">
+                            <a *ngIf="team.members[i].instagram !== undefined" class="p-2 fa-lg fb-ic"
+                                href="https://instagram.com/{{team.members[i].instagram}}" target="_blank">
                                 <mdb-icon fab icon="instagram" class="blue-text"> </mdb-icon>
                             </a>
-                            
+
                             <!-- email -->
-                            <a *ngIf="team.members[i].email !== undefined"  href="mailto:{{team.members[i].email}}"  target="_blank">
+                            <a *ngIf="team.members[i].email !== undefined" href="mailto:{{team.members[i].email}}"
+                                target="_blank">
                                 <mdb-icon fas icon="envelope" class="blue-text"> </mdb-icon>
                             </a>
                         </ul>
@@ -50,8 +52,8 @@
                     <div *ngIf="i + 1 < team.members.length" class="col-lg-3 col-md-6 mb-lg-0 mb-5">
                         <div class="avatar mx-auto">
                             <a name="{{team.members[i+1].name}}"></a>
-                            <img [src]="team.members[i + 1].pictureURL"
-                                class="rounded-circle z-depth-1" alt="Sample avatar">
+                            <img [src]="team.members[i + 1].pictureURL" class="rounded-circle z-depth-1  fixed-size"
+                                alt="Sample avatar">
                         </div>
                         <h5 class="font-weight-bold mt-4 mb-3">{{team.members[i+ 1].name}}</h5>
                         <p class="text-uppercase blue-text">
@@ -59,12 +61,14 @@
                         </p>
                         <ul class="list-unstyled mb-0">
                             <!-- instagram -->
-                            <a *ngIf="team.members[i+1].instagram !== undefined" class="p-2 fa-lg fb-ic" href="https://instagram.com/{{team.members[i+ 1].instagram}}" target="_blank">
+                            <a *ngIf="team.members[i+1].instagram !== undefined" class="p-2 fa-lg fb-ic"
+                                href="https://instagram.com/{{team.members[i+ 1].instagram}}" target="_blank">
                                 <mdb-icon fab icon="instagram" class="blue-text"> </mdb-icon>
                             </a>
-                            
+
                             <!-- email -->
-                            <a *ngIf="team.members[i+1].email !== undefined"  href="mailto:{{team.members[i+1].email}}"  target="_blank">
+                            <a *ngIf="team.members[i+1].email !== undefined" href="mailto:{{team.members[i+1].email}}"
+                                target="_blank">
                                 <mdb-icon fas icon="envelope" class="blue-text"> </mdb-icon>
                             </a>
                         </ul>
@@ -74,8 +78,8 @@
                     <div *ngIf="i + 2 < team.members.length" class="col-lg-3 col-md-6 mb-lg-0 mb-5">
                         <div class="avatar mx-auto">
                             <a name="{{team.members[i+2].name}}"></a>
-                            <img [src]="team.members[i + 2].pictureURL"
-                                class="rounded-circle z-depth-1" alt="Sample avatar">
+                            <img [src]="team.members[i + 2].pictureURL" class="rounded-circle z-depth-1 fixed-size"
+                                alt="Sample avatar">
                         </div>
                         <h5 class="font-weight-bold mt-4 mb-3">{{team.members[i+ 2].name}}</h5>
                         <p class="text-uppercase blue-text">
@@ -83,12 +87,14 @@
                         </p>
                         <ul class="list-unstyled mb-0">
                             <!-- instagram -->
-                            <a *ngIf="team.members[i+2].instagram !== undefined" class="p-2 fa-lg fb-ic" href="https://instagram.com/{{team.members[i + 2].instagram}}" target="_blank">
+                            <a *ngIf="team.members[i+2].instagram !== undefined" class="p-2 fa-lg fb-ic"
+                                href="https://instagram.com/{{team.members[i + 2].instagram}}" target="_blank">
                                 <mdb-icon fab icon="instagram" class="blue-text"> </mdb-icon>
                             </a>
-                            
+
                             <!-- email -->
-                            <a *ngIf="team.members[i+2].email !== undefined"  href="mailto:{{team.members[i+2].email}}"  target="_blank">
+                            <a *ngIf="team.members[i+2].email !== undefined" href="mailto:{{team.members[i+2].email}}"
+                                target="_blank">
                                 <mdb-icon fas icon="envelope" class="blue-text"> </mdb-icon>
                             </a>
                         </ul>
@@ -98,8 +104,8 @@
                     <div *ngIf="i + 3 < team.members.length" class="col-lg-3 col-md-6 mb-lg-0 mb-5">
                         <div class="avatar mx-auto">
                             <a name="{{team.members[i+3].name}}"></a>
-                            <img [src]="team.members[i + 3].pictureURL"
-                                class="rounded-circle z-depth-1" alt="Sample avatar">
+                            <img [src]="team.members[i + 3].pictureURL" class="rounded-circle z-depth-1 fixed-size"
+                                alt="Sample avatar">
                         </div>
                         <h5 class="font-weight-bold mt-4 mb-3">{{team.members[i+ 3].name}}</h5>
                         <p class="text-uppercase blue-text">
@@ -107,12 +113,14 @@
                         </p>
                         <ul class="list-unstyled mb-0">
                             <!-- instagram -->
-                            <a *ngIf="team.members[i+3].instagram !== undefined" class="p-2 fa-lg fb-ic" href="https://instagram.com/{{team.members[i+ 3].instagram}}" target="_blank">
+                            <a *ngIf="team.members[i+3].instagram !== undefined" class="p-2 fa-lg fb-ic"
+                                href="https://instagram.com/{{team.members[i+ 3].instagram}}" target="_blank">
                                 <mdb-icon fab icon="instagram" class="blue-text"> </mdb-icon>
                             </a>
-                            
+
                             <!-- email -->
-                            <a *ngIf="team.members[i+3].email !== undefined"  href="mailto:{{team.members[i+3].email}}"  target="_blank">
+                            <a *ngIf="team.members[i+3].email !== undefined" href="mailto:{{team.members[i+3].email}}"
+                                target="_blank">
                                 <mdb-icon fas icon="envelope" class="blue-text"> </mdb-icon>
                             </a>
                         </ul>
