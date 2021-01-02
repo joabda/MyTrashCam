@@ -40,6 +40,8 @@ export class NavBarComponent implements OnInit, AfterViewInit {
     }
   ];
 
+  linksMobile: Array<any> = new Array<any>();
+
   isBigScreen = true;
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
@@ -48,6 +50,8 @@ export class NavBarComponent implements OnInit, AfterViewInit {
     );
 
   constructor(private breakpointObserver: BreakpointObserver, public dialog: MatDialog, public data: DataService) { 
+    this.links.forEach( el => this.linksMobile.push(el));
+    this.linksMobile.splice(-1,1);
     this.data.language.subscribe( () => {
       this.updateText();
     });
@@ -79,7 +83,14 @@ export class NavBarComponent implements OnInit, AfterViewInit {
     }
   }
 
-  switchLanguage(toLang: string): void {
+  switchLanguage(toLang: string = undefined): void {
+    if(toLang === undefined) {
+      if(this.data.language.value === Language.FR) {
+        toLang = 'EN';
+      } else {
+        toLang = 'FR';
+      }
+    }
     this.data.language.next((toLang === 'FR') ? Language.FR : Language.EN);
     this.updateText();
     this.links[5].name = (toLang === 'FR') ? 'Français' : 'English';
@@ -89,6 +100,9 @@ export class NavBarComponent implements OnInit, AfterViewInit {
     const titles = this.data.getTitles();
     for(let i = 0; i < this.links.length; ++i) {
       this.links[i].name = titles[i];
+      if(i < this.links.length - 1) {
+        this.linksMobile[i].name = titles[i]
+      }
     }
   }
 }

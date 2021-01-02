@@ -18,7 +18,6 @@ import { IntroComponent } from './components/intro/intro.component';
 import { DataService } from './services/data/data.service';
 import { FooterComponent } from './components/footer/footer.component';
 import { ModelsComponent } from './components/models/models.component';
-import { AboutUsComponent } from './components/about-us/about-us.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
@@ -31,7 +30,6 @@ import { FilterBarComponent } from './components/filter-bar/filter-bar.component
 
 @NgModule({
   declarations: [
-    AboutUsComponent,
     AppComponent,
     FooterComponent,
     IntroComponent,
@@ -39,7 +37,6 @@ import { FilterBarComponent } from './components/filter-bar/filter-bar.component
     NavBarComponent,
     GalleryComponent,
     ContactUsComponent,
-    AboutUsComponent,
     MilestonesComponent,
     FilterBarComponent
   ],
