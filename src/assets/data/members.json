@@ -39,6 +39,12 @@
                     "pictureURL": "../../../assets/img/members/Bocar-Ba.jpg",
                     "age": "18 years old",
                     "instagram": "thebocar"
+                },
+                {
+                    "name": "Zeina Dakroob",
+                    "pictureURL": "../../../assets/img/members/Zeina-Dakroob.jpg",
+                    "age": "18 years old",
+                    "instagram": "zeinadakroob"
                 }
             ]
         },
@@ -124,6 +130,12 @@
                     "pictureURL": "../../../assets/img/members/Bocar-Ba.jpg",
                     "age": "18 ans",
                     "instagram": "thebocar"
+                },
+                {
+                    "name": "Zeina Dakroob",
+                    "pictureURL": "../../../assets/img/members/Zeina-Dakroob.jpg",
+                    "age": "18 ans",
+                    "instagram": "zeinadakroob"
                 }
             ]
         },

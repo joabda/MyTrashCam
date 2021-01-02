@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class IntroComponent {
 
   static TIME_IN_SECONDS: number = 1;
-  static NUMBER_OF_IMAGES: number = 5;
+  static NUMBER_OF_IMAGES: number = 8;
   private counter: number = 0;
 
   constructor() { 
@@ -17,7 +17,7 @@ export class IntroComponent {
 
   private changeImage(): void {
     document.getElementById("home-image").style.backgroundImage = 
-      `url(../../../assets/img/homepage/${this.getNext()}.jpg)`
+      `url(../../../assets/img/homepage/${this.getNext()}.JPG)`
   }
 
   private getNext(): number {
