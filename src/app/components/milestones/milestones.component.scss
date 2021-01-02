@@ -10,13 +10,6 @@ section {
   padding: 0 0 50px 0;
 }
 
-h1 {
-  font-size: 200%;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-weight: 400;
-}
-
 .timeline {
 
 	position: relative;
@@ -101,26 +94,6 @@ h1 {
 	margin-left: -15px;
 }
 
-a {
-	background: $primary;
-	color: $text;
-	padding: 8px 20px;
-	text-transform: uppercase;
-	font-size: 14px;
-	margin-bottom: 20px;
-	margin-top: 10px;
-	display: inline-block;
-	border-radius: 2px;
-	box-shadow: 0 1px 3px -1px rgba(0, 0, 0, .6);
-
-	&:hover, &:active, &:focus {
-		background: darken($primary, 10%);
-		color: $text;
-		text-decoration: none;
-	}
-
-}
-
 .timeline-card {
 	padding: 0!important;
 
@@ -144,13 +117,6 @@ a {
 		bottom: 5px;
 		left: 20px;
 	}
-}
-
-blockquote {
-	margin-top: 30px;
-	color: $secondary-text;
-	border-left-color: $primary;
-	padding: 0 20px;
 }
 
 .date {
