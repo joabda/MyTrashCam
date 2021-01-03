@@ -24,7 +24,7 @@
             "tsConfig": "tsconfig.app.json",
             "aot": false,
             "assets": [
-              "src/logo.png",
+              "src/logoColored.png",
               "src/assets"
             ],
             "styles": [
@@ -99,7 +99,7 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "assets": [
-              "src/logo.png",
+              "src/logoColored.png",
               "src/assets"
             ],
             "styles": [
