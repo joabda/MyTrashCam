@@ -1,50 +1,171 @@
 [
     {
-        "pictureURL": "../../../assets/img/pictures/photo1.jpg",
-        "model": "Maude Couturier",
-        "modelSex": "Female",
-        "location": "Sherbrook",
-        "locationLink": "https://www.google.com/maps/place/Sherbrooke/@45.5579564,-73.870386,11z/data=!4m8!1m2!2m1!1ssherbrook+download+montreal!3m4!1s0x4cc91bb598e80e15:0x36b6ed0de907bfc3!8m2!3d45.518225!4d-73.5682609"
+        "pictureURL": "../../../assets/img/pictures/AmarSakr/SafraLb.jpg",
+        "model": "Amar Sakr",
+        "location": "Safra, LB",
+        "locationLink": "https://www.google.com/maps/place/Safra,+Lebanon/"
     },
     {
-        "pictureURL": "../../../assets/img/pictures/photo2.jpg",
-        "model": "Rebecca Aoun",
-        "modelSex": "Female",
-        "location": "Mont Royal",
-        "locationLink": "https://www.google.com/maps/place/Mount+Royal"
-    },    
-    {
-        "pictureURL": "../../../assets/img/pictures/photo1.jpg",
-        "model": "Maude Couturier",
-        "modelSex": "Female",
-        "location": "Sherbrook"
+        "pictureURL": "../../../assets/img/pictures/BocarBa/EdouardMontpetit.JPG",
+        "model": "Bocar Ba",
+        "location": "Édouard-Montpetit, MTL",
+        "locationLink": "https://www.google.com/maps/place/University+of+Montreal+-+Archives+Services/@45.505946,-73.6183957,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc9198d7a50ce59:0x1d295c344a30ea3f!8m2!3d45.505946!4d-73.616207"
     },
     {
-        "pictureURL": "../../../assets/img/pictures/photo2.jpg",
-        "model": "Rebecca Aoun",
-        "modelSex": "Female",
-        "location": "Sherbrook"
-    },    {
-        "pictureURL": "../../../assets/img/pictures/photo1.jpg",
-        "model": "Maude Couturier",
-        "modelSex": "Female",
-        "location": "Sherbrook"
+        "pictureURL": "../../../assets/img/pictures/CarmenMatar/VieuxPortMtl.JPG",
+        "model": "Carmen Matar",
+        "location": "Vieux Port, MTL",
+        "locationLink": "https://www.google.com/maps/place/Old+Port+of+Montreal,+Montreal,+QC"
     },
     {
-        "pictureURL": "../../../assets/img/pictures/photo2.jpg",
-        "model": "Rebecca Aoun",
-        "modelSex": "Female",
-        "location": "Sherbrook"
-    },    {
-        "pictureURL": "../../../assets/img/pictures/photo1.jpg",
-        "model": "Maude Couturier",
-        "modelSex": "Female",
-        "location": "Sherbrook"
+        "pictureURL": "../../../assets/img/pictures/ClaraDaccache/Kfarhabab.jpg",
+        "model": "Clara Daccache",
+        "location": "Kfarhabab, LB",
+        "locationLink": "https://www.google.com/maps/place/Kfar+Hbab,+Lebanon/"
     },
     {
-        "pictureURL": "../../../assets/img/pictures/photo2.jpg",
-        "model": "Rebecca Aoun",
-        "modelSex": "Female",
-        "location": "Sherbrook"
+        "pictureURL": "../../../assets/img/pictures/ClaraDaccache/Kfarhabab-1.jpg",
+        "model": "Clara Daccache",
+        "location": "Kfarhabab, LB",
+        "locationLink": "https://www.google.com/maps/place/Kfar+Hbab,+Lebanon/"
+    },
+    {
+        "pictureURL": "../../../assets/img/pictures/MaudeCouturier/EdouardMontpetit.JPG",
+        "model": "Maude Couturier",
+        "location": "Vieux Port, MTL",
+        "locationLink": "https://www.google.com/maps/place/Old+Port+of+Montreal,+Montreal,+QC"
+    },
+    {
+        "pictureURL": "../../../assets/img/pictures/MaudeCouturier/VieuPortMtl.JPG",
+        "model": "Maude Couturier",
+        "location": "Édouard-Montpetit, MTL",
+        "locationLink": "https://www.google.com/maps/place/University+of+Montreal+-+Archives+Services/@45.505946,-73.6183957,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc9198d7a50ce59:0x1d295c344a30ea3f!8m2!3d45.505946!4d-73.616207"
+    },
+    {
+        "pictureURL": "../../../assets/img/pictures/MitsaKarim/BouarLb.jpg",
+        "model": "Mitsa Karim",
+        "location": "Bouar, LB",
+        "locationLink": "https://www.google.com/maps/place/Bouar,+Lebanon/"
+    },
+    {
+        "pictureURL": "../../../assets/img/pictures/MoslehBouery/BouarLb.jpg",
+        "model": "Mosleh Bouery",
+        "location": "Bouar, LB",
+        "locationLink": "https://www.google.com/maps/place/Bouar,+Lebanon/"
+    },
+    {
+        "pictureURL": "../../../assets/img/pictures/MoslehBouery/Kfarhabab.jpg",
+        "model": "Mosleh Bouery",
+        "location": "Kfarhabab, LB",
+        "locationLink": "https://www.google.com/maps/place/Kfar+Hbab,+Lebanon/"
+    },
+    {
+        "pictureURL": "../../../assets/img/pictures/MoslehBouery/NahrIbrahim.jpg",
+        "model": "Mosleh Bouery",
+        "location": "Nahr Ibrahim, LB",
+        "locationLink": "https://www.google.com/maps/place/Nahr+Ibrahim,+Lebanon/"
+    },
+    {
+        "pictureURL": "../../../assets/img/pictures/MyriamElHaddad/Brome.JPG",
+        "model": "Myriam El Haddad",
+        "location": "Bolton, QC",
+        "locationLink": "https://www.google.com/maps/place/%C3%89tang+Baker/"
+    },
+    {
+        "pictureURL": "../../../assets/img/pictures/NoudarGhailane/DowntownMtl.JPG",
+        "model": "Noudar Ghailane",
+        "location": "Downtown, MTL",
+        "locationLink": "https://www.google.com/maps/place/Downtown+Montreal,+Montreal,+QC"
+    },
+    {
+        "pictureURL": "../../../assets/img/pictures/NoudarGhailane/EdouardMontpetit.JPG",
+        "model": "Noudar Ghailane",
+        "location": "Édouard-Montpetit, MTL",
+        "locationLink": "https://www.google.com/maps/place/University+of+Montreal+-+Archives+Services/@45.505946,-73.6183957,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc9198d7a50ce59:0x1d295c344a30ea3f!8m2!3d45.505946!4d-73.616207"
+    },
+    {
+        "pictureURL": "../../../assets/img/pictures/NoudarGhailane/EdouardMontPetit-1.JPG",
+        "model": "Noudar Ghailane",
+        "location": "Édouard-Montpetit, MTL",
+        "locationLink": "https://www.google.com/maps/place/University+of+Montreal+-+Archives+Services/@45.505946,-73.6183957,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc9198d7a50ce59:0x1d295c344a30ea3f!8m2!3d45.505946!4d-73.616207"
+    },
+    {
+        "pictureURL": "../../../assets/img/pictures/NoudarGhailane/VieuxPort.JPG",
+        "model": "Noudar Ghailane",
+        "location": "Vieux Port, MTL",
+        "locationLink": "https://www.google.com/maps/place/Old+Port+of+Montreal,+Montreal,+QC"
+    },
+    {
+        "pictureURL": "../../../assets/img/pictures/PerlaAndraos/Brome.JPG",
+        "model": "Perla Andraos",
+        "location": "Bolton, QC",
+        "locationLink": "https://www.google.com/maps/place/%C3%89tang+Baker/"
+    },
+    {
+        "pictureURL": "../../../assets/img/pictures/ZeinaDakroub/MontRoyal.JPG",
+        "model": "Zeina Dakroub",
+        "location": "Mont Royal, MTL",
+        "locationLink": "https://www.google.com/maps/place/Mount+Royal+Park/@45.5035377,-73.6134159,14.48z/data=!4m8!1m2!2m1!1sparc+mont+royal!3m4!1s0x0:0x4c8dc463a4718c9a!8m2!3d45.5015984!4d-73.5932332"
+    },
+    {
+        "pictureURL": "../../../assets/img/pictures/ZeinaDakroub/MontRoyal-1.jpg",
+        "model": "Zeina Dakroub",
+        "location": "Mont Royal, MTL",
+        "locationLink": "https://www.google.com/maps/place/Mount+Royal+Park/@45.5035377,-73.6134159,14.48z/data=!4m8!1m2!2m1!1sparc+mont+royal!3m4!1s0x0:0x4c8dc463a4718c9a!8m2!3d45.5015984!4d-73.5932332"
+    },
+    {
+        "pictureURL": "../../../assets/img/pictures/Places/Bolton.JPG",
+        "location": "Bolton, QC",
+        "locationLink": "https://www.google.com/maps/place/%C3%89tang+Baker/"
+    },
+    {
+        "pictureURL": "../../../assets/img/pictures/Places/ChelseaQC.JPG",
+        "location": "Chelsea, QC",
+        "locationLink": "https://www.google.com/maps/place/Great+Canadian+Bungee"
+    },
+    {
+        "pictureURL": "../../../assets/img/pictures/Places/DowntownMTL.JPG",
+        "location": "Downtown, MTL",
+        "locationLink": "https://www.google.com/maps/place/Downtown+Montreal,+Montreal,+QC"
+    },
+    {
+        "pictureURL": "../../../assets/img/pictures/Places/GruyereSuisse.JPG",
+        "location": "Gruyere, CH",
+        "locationLink": "https://www.google.com/maps/place/Gruy%C3%A8res,+Switzerland/"
+    },
+    {
+        "pictureURL": "../../../assets/img/pictures/Places/MontreuxSuisse.JPG",
+        "location": "Montreux, CH",
+        "locationLink": "https://www.google.com/maps/place/Montreux,+Switzerland"
+    },
+    {
+        "pictureURL": "../../../assets/img/pictures/Places/MontreuxSuisse-1.JPG",
+        "location": "Montreux, CH",
+        "locationLink": "https://www.google.com/maps/place/Montreux,+Switzerland"
+    },
+    {
+        "pictureURL": "../../../assets/img/pictures/Places/MontreuxSuisse-2.JPG",
+        "location": "Montreux, CH",
+        "locationLink": "https://www.google.com/maps/place/Montreux,+Switzerland"
+    },
+    {
+        "pictureURL": "../../../assets/img/pictures/Places/MontRoyal.JPG",
+        "location": "Mont Royal, MTL",
+        "locationLink": "https://www.google.com/maps/place/Mount+Royal+Park/@45.5035377,-73.6134159,14.48z/data=!4m8!1m2!2m1!1sparc+mont+royal!3m4!1s0x0:0x4c8dc463a4718c9a!8m2!3d45.5015984!4d-73.5932332"
+    },
+    {
+        "pictureURL": "../../../assets/img/pictures/Places/Ottawa.JPG",
+        "location": "Ottawa, CA",
+        "locationLink": "https://www.google.com/maps/place/Parliament+Hill/@45.4236396,-75.7021194,15.31z/data=!4m13!1m7!3m6!1s0x4cce05b25f5113af:0x8a6a51e131dd15ed!2sOttawa,+ON!3b1!8m2!3d45.4215296!4d-75.6971931!3m4!1s0x4cce04ff4fe494ef:0x26bb54f60c29f6e!8m2!3d45.4235931!4d-75.7009292"
+    },
+    {
+        "pictureURL": "../../../assets/img/pictures/Places/Ottawa-1.JPG",
+        "location": "Ottawa, CA",
+        "locationLink": "https://www.google.com/maps/place/Parliament+Hill/@45.4236396,-75.7021194,15.31z/data=!4m13!1m7!3m6!1s0x4cce05b25f5113af:0x8a6a51e131dd15ed!2sOttawa,+ON!3b1!8m2!3d45.4215296!4d-75.6971931!3m4!1s0x4cce04ff4fe494ef:0x26bb54f60c29f6e!8m2!3d45.4235931!4d-75.7009292"
+    },
+    {
+        "pictureURL": "../../../assets/img/pictures/Places/VieuxPort.JPG",
+        "location": "Vieux Port, MTL",
+        "locationLink": "https://www.google.com/maps/place/Old+Port+of+Montreal,+Montreal,+QCotta"
     }
 ]
