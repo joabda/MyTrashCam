@@ -2,6 +2,10 @@
 MEAN Stack Web application for photographer's content display.
 Manager using [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
 
+# Deployed
+
+This website has been deployed @ [MyTrashCam](https://my-trash-cam.herokuapp.com)
+
 # Important
 
 Commands starting with `npm` or `yarn` will have to be executed in the `client` directory.
