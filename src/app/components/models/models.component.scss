@@ -4,6 +4,15 @@
     }
 }
 
+.model-link {
+    display: block; 
+    content: " "; 
+    margin-top: -285px; 
+    height: 285px; 
+    visibility: hidden; 
+    pointer-events: none;
+}
+
 .team-section {
     max-width: 98vw;
 }
