@@ -6,6 +6,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { DataService } from 'src/app/services/data/data.service';
 import { Language } from 'src/app/enums/language';
 import { Title } from '@angular/platform-browser';
+import { EventService } from 'src/app/services/event/event.service';
 
 @Component({
   selector: 'app-nav-bar',
@@ -51,7 +52,7 @@ export class NavBarComponent implements OnInit {
     );
 
   constructor(private breakpointObserver: BreakpointObserver, public dialog: MatDialog,
-    public data: DataService, private titleService: Title) {
+    public data: DataService, private titleService: Title, private events: EventService) {
     this.links.forEach(el => this.linksMobile.push(el));
     this.linksMobile.splice(-1, 1);
     this.data.language.subscribe(() => {
@@ -71,6 +72,9 @@ export class NavBarComponent implements OnInit {
   changeTitle(indexPage: number): void {
     if(indexPage !== this.links.length) {
       this.titleService.setTitle(this.links[indexPage].name + " - MyTrashCam");
+    }
+    if(indexPage === 1) {
+      this.events.shuffleGallery.next(true);
     }
   }
 

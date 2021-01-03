@@ -3,6 +3,7 @@ import { Subscription } from 'rxjs/internal/Subscription';
 import { FilterOption } from 'src/app/interfaces/filter';
 import { PictureJSON } from 'src/app/interfaces/json/pictureJSON';
 import { DataService } from 'src/app/services/data/data.service';
+import { EventService } from 'src/app/services/event/event.service';
 import { FilterService } from 'src/app/services/filter/filter.service';
 import { HotkeysService } from 'src/app/services/hotkeys/hotkeys.service';
 import { FilterBarComponent } from '../filter-bar/filter-bar.component';
@@ -22,15 +23,20 @@ export class GalleryComponent implements OnInit, OnDestroy{
   private subscriptions: Subscription[] = [];
 
   constructor(public data: DataService, private filter: FilterService, 
-    private shortcuts: HotkeysService) {
-    data.language.subscribe(() => this.pictures = data.getPictures());
+    private shortcuts: HotkeysService, private events: EventService) {
+    data.language.subscribe(() => this.pictures = this.shuffle(data.getPictures()));
     this.filteredPictures = new Array<PictureJSON>();
-    filter.filterOptions.subscribe(() => {
+    this.filter.filterOptions.subscribe(() => {
 
       this.filteredPictures = [];
       this.pictures.forEach(val => this.filteredPictures.push(Object.assign({}, val)));
       this.filtering(filter.filterOptions.value);
-    })
+    });
+
+    this.events.shuffleGallery.subscribe( () => {
+      this.pictures = this.shuffle(data.getPictures());
+      events.shuffleGallery.next(false);
+    });
   }
 
   ngOnInit() {
@@ -45,6 +51,25 @@ export class GalleryComponent implements OnInit, OnDestroy{
         this.filterBar.searchByName.nativeElement.focus();
       }
     }));
+  }
+
+  private shuffle(array: Array<any>): Array<any> {
+    let currentIndex = array.length, temporaryValue, randomIndex;
+  
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+  
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+  
+      // And swap it with the current element.
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+  
+    return array;
   }
 
   ngOnDestroy(): void {
