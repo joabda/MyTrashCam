@@ -59,8 +59,11 @@ export class IntroComponent implements OnInit, OnDestroy {
   }
 
   private changeImage(index: number): void {
-    document.getElementById("home-image").style.backgroundImage =
-      `url(../../../assets/img/homepage/${index}.JPG)`
+    let element: HTMLElement = document.getElementById("home-image");
+    if(element !== null) {
+      element.style.backgroundImage =
+        `url(../../../assets/img/homepage/${index}.JPG)`
+    }
   }
 
   private getNext(): number {
