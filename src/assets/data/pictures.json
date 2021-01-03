@@ -12,6 +12,12 @@
         "locationLink": "https://www.google.com/maps/place/University+of+Montreal+-+Archives+Services/@45.505946,-73.6183957,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc9198d7a50ce59:0x1d295c344a30ea3f!8m2!3d45.505946!4d-73.616207"
     },
     {
+        "pictureURL": "../../../assets/img/pictures/BocarBa/CotesDesNeiges.JPG",
+        "model": "Bocar Ba",
+        "location": "Côte-Des-Neiges, MTL",
+        "locationLink": "https://www.google.com/maps/place/C%C3%B4te-Des-Neiges%E2%80%94Notre-Dame-De-Gr%C3%A2ce,+Montreal,+QC"
+    },
+    {
         "pictureURL": "../../../assets/img/pictures/CarmenMatar/VieuxPortMtl.JPG",
         "model": "Carmen Matar",
         "location": "Vieux Port, MTL",
@@ -34,6 +40,12 @@
         "model": "Maude Couturier",
         "location": "Vieux Port, MTL",
         "locationLink": "https://www.google.com/maps/place/Old+Port+of+Montreal,+Montreal,+QC"
+    },
+    {
+        "pictureURL": "../../../assets/img/pictures/MaudeCouturier/CotesDesNeiges.JPG",
+        "model": "Maude Couturier",
+        "location": "Côte-Des-Neiges, MTL",
+        "locationLink": "https://www.google.com/maps/place/C%C3%B4te-Des-Neiges%E2%80%94Notre-Dame-De-Gr%C3%A2ce,+Montreal,+QC"
     },
     {
         "pictureURL": "../../../assets/img/pictures/MaudeCouturier/VieuPortMtl.JPG",
