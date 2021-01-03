@@ -79,10 +79,19 @@ export class FilterBarComponent implements OnInit{
 
   private _filter(array: Array<string>, value: string): string[] {
     const filterValue: string = this._normalizeValue(value);
-    return array.filter(street => this._normalizeValue(street).includes(filterValue));
+    return array.filter(street => {
+      let normalizedValue: string = this._normalizeValue(street)
+      if(normalizedValue !== undefined) {
+        return normalizedValue.includes(filterValue);
+      }
+      return false;
+    });
   }
 
   private _normalizeValue(value: string): string {
-    return value.toLowerCase().replace(/\s/g, '');
+    if(value !== undefined) {
+      return value.toLowerCase().replace(/\s/g, '');
+    }
+    return undefined;
   }
 }

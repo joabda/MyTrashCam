@@ -81,8 +81,9 @@ export class GalleryComponent implements OnInit, OnDestroy{
 
   private filtering(opts: FilterOption): void {
     for (let i: number = 0; i < this.pictures.length; ++i) {
-      if (this.pictures[i].model.toLowerCase().indexOf(opts.name) === -1 ||
-        this.pictures[i].location.toLowerCase().indexOf(opts.region) === -1
+      let picture: PictureJSON = this.pictures[i];
+      if ((picture.model !== undefined && picture.model.toLowerCase().indexOf(opts.name) === -1) ||
+      (picture.location !== undefined && picture.location.toLowerCase().indexOf(opts.region) === -1)
       ) {
         this.filteredPictures[i] = undefined;
       }
