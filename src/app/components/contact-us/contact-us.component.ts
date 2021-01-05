@@ -58,7 +58,7 @@ export class ContactUsComponent implements OnInit {
         let headers = new Headers();
         headers.append('Content-Type', 'application/json');
         headers.append('Access-Control-Allow-Origin', '*');
-        this.http.post(`${ContactUsComponent.PROXY}https://docs.google.com/forms/d/e/1FAIpQLSePkTgeZOEqt_K6uYSCocK9_n00Wm-e1L1-nhUUs30f9clxMA/formResponse?` +
+        this.http.post(`${ContactUsComponent.PROXY}https://docs.google.com/forms/d/e/1FAIpQLSe7Rz1J76QHL_QuqRSbQYLiNyQa9GIJU6VLtr6CEH9-7MfjuA/formResponse?` +
           this.getURLData(),
           { headers: headers }
         )
@@ -87,10 +87,10 @@ export class ContactUsComponent implements OnInit {
   }
 
   private getURLData(): string {
-    return `entry.75568565=${this.currentValues.name}` +
-      `&entry.21603732=${this.currentValues.email}` +
-      `&entry.993607557=${this.encodeUTF8(this.currentValues.reason)}` +
-      `&entry.388409986=${this.encodeUTF8(this.currentValues.message)}`
+    return `entry.1282386564=${this.currentValues.name}` +
+      `&entry.290223062=${this.currentValues.email}` +
+      `&entry.333180903=${this.encodeUTF8(this.currentValues.reason)}` +
+      `&entry.267169984=${this.encodeUTF8(this.currentValues.message)}`
       ;
   }
 
