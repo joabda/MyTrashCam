@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { AfterViewChecked, AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs/internal/Subscription';
 import { HotkeysService } from 'src/app/services/hotkeys/hotkeys.service';
 
@@ -7,7 +7,7 @@ import { HotkeysService } from 'src/app/services/hotkeys/hotkeys.service';
   templateUrl: './intro.component.html',
   styleUrls: ['./intro.component.scss']
 })
-export class IntroComponent implements OnInit, OnDestroy {
+export class IntroComponent implements OnInit, OnDestroy, AfterViewInit {
 
   static TIME_IN_SECONDS: number = 1.5;
   static NUMBER_OF_IMAGES: number = 8;
@@ -16,7 +16,9 @@ export class IntroComponent implements OnInit, OnDestroy {
   private timer: any; // type: NodeJs.timer
   private timerIsOn: boolean;
 
-  constructor(private shortcuts: HotkeysService) {
+  constructor(private shortcuts: HotkeysService) {}
+  
+  ngAfterViewInit() {
     this.timer = this.setTimer();
     this.timerIsOn = true;
   }
