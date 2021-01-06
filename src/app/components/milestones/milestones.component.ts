@@ -26,6 +26,7 @@ export class MilestonesComponent implements AfterViewInit{
   ngAfterViewInit(): void {
     for(let i = 0; i < this.text.events.length; ++i) {
       const event = this.text.events[i];
+      console.log(document.getElementById(`event-img-${i}`))
       if(event.imgSrc.length > 4) {
         document.getElementById(`event-img-${i}`).style.backgroundImage = event.imgSrc;
       }

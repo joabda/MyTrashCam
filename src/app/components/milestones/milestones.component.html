@@ -16,9 +16,9 @@
             </div>
           </div>
           <!-- Left Items -->
+          <!-- Right Items -->
           <div class="timeline-item">
             <div class="timeline-img"></div>
-            <!-- Right Items -->
             <div *ngIf="i + 1 < text.events.length" class="timeline-content timeline-card js--fadeInRight">
               <div class="timeline-img-header" id="event-img-{{i+1}}">
                 <h2>{{text.events[i+1].title}}</h2>
@@ -26,8 +26,8 @@
               <div class="date">{{text.events[i+1].date}}</div>
               <p>{{text.events[i+1].text}}</p>
             </div>
-            <!-- Right Items -->
           </div>
+          <!-- Right Items -->
         </div>
       </div>
     </div>
