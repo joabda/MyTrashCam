@@ -25,7 +25,7 @@
                 {
                     "name": "Maude Couturier",
                     "pictureURL": "../../../assets/img/members/Maude-Couturier.jpg",
-                    "age": "19 years old",
+                    "age": "18 years old",
                     "instagram": "maude.couturier"
                 },
                 {
@@ -45,6 +45,12 @@
                     "pictureURL": "../../../assets/img/members/Zeina-Dakroob.jpg",
                     "age": "18 years old",
                     "instagram": "zeinadakroob"
+                },
+                {
+                    "name": "Carmen Matar",
+                    "pictureURL": "../../../assets/img/members/Carmen-Matar.jpg",
+                    "age": "18 years old",
+                    "instagram": "carmen_matar"
                 }
             ]
         },
@@ -66,7 +72,7 @@
                 {
                     "name": "Mosleh Bouery",
                     "pictureURL": "../../../assets/img/members/Mosleh-Bouery.jpg",
-                    "age": "18 years old",
+                    "age": "19 years old",
                     "instagram": "moslehbouery",
                     "email": "moslehbouery@gmail.com"
                 },
@@ -116,7 +122,7 @@
                 {
                     "name": "Maude Couturier",
                     "pictureURL": "../../../assets/img/members/Maude-Couturier.jpg",
-                    "age": "19 ans",
+                    "age": "18 ans",
                     "instagram": "maude.couturier"
                 },
                 {
@@ -136,6 +142,12 @@
                     "pictureURL": "../../../assets/img/members/Zeina-Dakroob.jpg",
                     "age": "18 ans",
                     "instagram": "zeinadakroob"
+                },
+                {
+                    "name": "Carmen Matar",
+                    "pictureURL": "../../../assets/img/members/Carmen-Matar.jpg",
+                    "age": "18 years old",
+                    "instagram": "carmen_matar"
                 }
             ]
         },
@@ -157,7 +169,7 @@
                 {
                     "name": "Mosleh Bouery",
                     "pictureURL": "../../../assets/img/members/Mosleh-Bouery.jpg",
-                    "age": "18 ans",
+                    "age": "19 ans",
                     "instagram": "moslehbouery",
                     "email": "moslehbouery@gmail.com"
                 },
