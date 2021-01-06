@@ -73,7 +73,7 @@
           </div>
           <div class="text-center">
             <button mdbBtn color="light-blue" class="waves-light" mdbWavesEffect
-              (click)="submit()">{{text.send}}</button>
+              (click)="submit(); clicked = true;" [disabled]="clicked">{{text.send}}</button>
           </div>
         </mdb-card-body>
       </mdb-card>

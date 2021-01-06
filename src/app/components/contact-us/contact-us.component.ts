@@ -26,6 +26,7 @@ export class ContactUsComponent implements OnInit {
   };
   text: ContactUsJSON;
   static PROXY = 'https://cors-anywhere.herokuapp.com/';
+  clicked: boolean;
 
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
@@ -40,6 +41,7 @@ export class ContactUsComponent implements OnInit {
       this.text = data.getContactUs();
     });
     this.resetInputs();
+    this.clicked = false;
   }
 
   ngOnInit(): void {
@@ -64,16 +66,19 @@ export class ContactUsComponent implements OnInit {
         )
           .toPromise()
           .catch(res => {
+            console.log(res)
             if ((res as HttpErrorResponse).status == HttpStatus.OK) {
               this.openSnack(this.data.getSent());
               this.resetInputs();
             } else {
               this.openSnack(this.data.errorMessage());
             }
+            this.clicked = false;
           })
       }
     } catch (e) {
       this.openSnack(this.data.errorMessage());
+      this.clicked = false;
     }
   }
 
