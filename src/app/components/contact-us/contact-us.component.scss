@@ -1,10 +1,10 @@
 #picture {
-    margin-right: 2vw;
+    float: right !important;
+    margin-left: 2vw;
     width: 26vw;
 }
 
 #form {
-    float: right !important;
     width: 46vw !important;
 }
 
@@ -21,12 +21,12 @@
 @media screen and (max-width: 1000px) {
     #picture {
         margin: 0;
-        margin-right: 0;;
-        width: 100%;
+        margin-right: 0;
+        margin-top: 50px;
+        width: 75%;
     }
 
     #form {
-        margin-top: 50px;
         margin-left: auto;
         margin-right: auto;
         width: 70vw !important;
@@ -34,6 +34,12 @@
 }
   
 @media screen and (max-width: 600px) {
+
+    #picture {
+        margin-top: 50px;
+        width: 50%;
+    }
+
     #form {
         width: 85vw !important;
     }
