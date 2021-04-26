@@ -24,8 +24,8 @@
         <!-- Grid column -->
         <div *ngIf="i % 3 == 0 && filteredPictures[i+1] != undefined " class="col-md-4 mx-auto my-5">
             <a><img class="img-fluid z-depth-1" src="{{filteredPictures[i+1].pictureURL}}"
-                    alt="Photo of {{filteredPictures[i+1].model}}"></a>
-            <a href="/models/#{{filteredPictures[i+1].model}}">
+                    alt="Photo of {{filteredPictures[i+1].model}}" loading="lazy"></a>
+            <a href="/models/#{{filteredPictures[i+1].model}}" loading="lazy">
                 <h5 class="font-weight-bold" style="text-align: center;">{{filteredPictures[i+1].model}}</h5>
             </a>
                 <!-- location -->
@@ -41,7 +41,7 @@
         <!-- Grid column -->
         <div *ngIf="i % 3 == 0 && filteredPictures[i+2] != undefined " class="col-md-4 mx-auto my-5">
             <a><img class="img-fluid z-depth-1" src="{{filteredPictures[i+2].pictureURL}}"
-                    alt="Photo of {{filteredPictures[i+2].model}}"></a>
+                    alt="Photo of {{filteredPictures[i+2].model}}" loading="lazy"></a>
             <a href="/models/#{{filteredPictures[i+2].model}}">
                 <h5 class="font-weight-bold" style="text-align: center;">{{filteredPictures[i+2].model}}</h5>
             </a>                
