@@ -11,7 +11,7 @@ import { FilterService } from 'src/app/services/filter/filter.service';
   templateUrl: './filter-bar.component.html',
   styleUrls: ['./filter-bar.component.scss']
 })
-export class FilterBarComponent implements OnInit{
+export class FilterBarComponent implements OnInit {
 
   @ViewChild("searchName") searchByName: ElementRef;
   @ViewChild("searchRegion") searchByRegion: ElementRef;
@@ -24,7 +24,7 @@ export class FilterBarComponent implements OnInit{
   filteredRegions: Observable<string[]>;
 
   constructor(public data: DataService, private filter: FilterService) {
-    data.language.subscribe( () => {
+    data.language.subscribe(() => {
       this.pictures = data.getPictures();
     });
     this.modelsControl = new FormControl();
@@ -32,13 +32,11 @@ export class FilterBarComponent implements OnInit{
     this.modelsNames = new Array<string>();
     this.regions = new Array<string>();
     for (var index in this.pictures) {
-      if(this.modelsNames.indexOf(this.pictures[index].model) === -1) {
+      if (this.modelsNames.indexOf(this.pictures[index].model) === -1)
         this.modelsNames.push(this.pictures[index].model);
-      }
-      if(this.regions.indexOf(this.pictures[index].location) === -1 
-        && this.pictures[index].location != undefined) {
+      if (this.regions.indexOf(this.pictures[index].location) === -1
+        && this.pictures[index].location != undefined)
         this.regions.push(this.pictures[index].location);
-      }
     }
     this.modelsNames.sort();
     this.regions.sort();
@@ -56,39 +54,36 @@ export class FilterBarComponent implements OnInit{
   }
 
   updateFilter(changedFilter: number, newValue: string): void {
-    switch(changedFilter) { 
-      case 0: { 
+    switch (changedFilter) {
+      case 0: {
         this.filter.name.next(newValue.toLowerCase());
-        break; 
-      } 
-      case 1: { 
+        break;
+      }
+      case 1: {
         this.filter.region.next(newValue.toLowerCase());
-         break; 
-      } 
+        break;
+      }
       case 2: {
-        if(newValue !== "Sexe" && newValue !== "Gender"){
+        if (newValue !== "Sexe" && newValue !== "Gender")
           this.filter.sex.next(newValue);
-        }
-         break; 
-      } 
-   } 
+        break;
+      }
+    }
   }
 
   private _filter(array: Array<string>, value: string): string[] {
     const filterValue: string = this._normalizeValue(value);
     return array.filter(street => {
       let normalizedValue: string = this._normalizeValue(street)
-      if(normalizedValue !== undefined) {
+      if (normalizedValue !== undefined)
         return normalizedValue.includes(filterValue);
-      }
       return false;
     });
   }
 
   private _normalizeValue(value: string): string {
-    if(value !== undefined) {
+    if (value !== undefined)
       return value.toLowerCase().replace(/\s/g, '');
-    }
     return undefined;
   }
 }

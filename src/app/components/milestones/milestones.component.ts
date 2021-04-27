@@ -16,7 +16,7 @@ export class MilestonesComponent implements AfterViewInit{
       this.text = data.getHistory();
       for(let i = 0; i < this.text.events.length; ++i) {
         const event = this.text.events[i];
-        if(event.imgSrc.length > 4) {
+        if(event.imgSrc.length > 4 && document.getElementById(`event-img-${i}`)) {
           document.getElementById(`event-img-${i}`).style.backgroundImage = event.imgSrc;
         }
       }
@@ -26,8 +26,7 @@ export class MilestonesComponent implements AfterViewInit{
   ngAfterViewInit(): void {
     for(let i = 0; i < this.text.events.length; ++i) {
       const event = this.text.events[i];
-      console.log(document.getElementById(`event-img-${i}`))
-      if(event.imgSrc.length > 4) {
+      if(event.imgSrc.length > 4 && document.getElementById(`event-img-${i}`)) {
         document.getElementById(`event-img-${i}`).style.backgroundImage = event.imgSrc;
       }
     }

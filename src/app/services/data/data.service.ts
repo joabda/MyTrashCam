@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { Title } from 'src/app/interfaces/titles';
 import { Language } from 'src/app/enums/language';
 import { BehaviorSubject } from 'rxjs';
 import { HistoryJSON } from 'src/app/interfaces/json/historyJSON';
@@ -34,18 +33,11 @@ export class DataService {
   }
 
   getSent(): string {
-    if(this.language.value === Language.EN) {
-      return "Your message has been sent!";
-    } else {
-      return "Votre message a été envoyé!";
-    }
+    return (this.language.value === Language.EN) ? "Your message has been sent!" : "Votre message a été envoyé!";
   }
 
   errorMessage(): string {
-    if(this.language.value === Language.EN) {
-      return "Sorry, we encountered some problems, try again later :(";
-    } else {
-      return "Désolé, nous avons rencontré des problèmes, réessayez plus tard :(";
-    }
+    return (this.language.value === Language.EN) ? "Sorry, we encountered some problems, try again later :(" :
+      "Désolé, nous avons rencontré des problèmes, réessayez plus tard :(";
   }
 }

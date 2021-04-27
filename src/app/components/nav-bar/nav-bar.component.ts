@@ -7,6 +7,7 @@ import { DataService } from 'src/app/services/data/data.service';
 import { Language } from 'src/app/enums/language';
 import { Title } from '@angular/platform-browser';
 import { EventService } from 'src/app/services/event/event.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-nav-bar',
@@ -52,7 +53,8 @@ export class NavBarComponent implements OnInit {
     );
 
   constructor(private breakpointObserver: BreakpointObserver, public dialog: MatDialog,
-    public data: DataService, private titleService: Title, private events: EventService) {
+    public data: DataService, private titleService: Title, private events: EventService,
+    private translate: TranslateService) {
     this.links.forEach(el => this.linksMobile.push(el));
     this.linksMobile.splice(-1, 1);
   }
@@ -66,13 +68,11 @@ export class NavBarComponent implements OnInit {
       );
   }
 
-  changeTitle(indexPage: number): void {
-    if(indexPage !== this.links.length) {
-      this.titleService.setTitle(this.links[indexPage].name + " - MyTrashCam");
-    }
-    if(indexPage === 1) {
+  async changeTitle(indexPage: number): Promise<void> {
+    if (indexPage !== this.links.length)
+      this.translate.get(this.links[indexPage].name).subscribe(res => this.titleService.setTitle(res + " - MyTrashCam"));
+    if (indexPage === 1)
       this.events.shuffleGallery.next(true);
-    }
   }
 
   switchLanguage(toLang: string = undefined): void {
