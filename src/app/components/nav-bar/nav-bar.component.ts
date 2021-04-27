@@ -17,27 +17,27 @@ export class NavBarComponent implements OnInit {
 
   links = [
     {
-      name: '',
+      name: 'TITLES.home',
       href: '/'
     },
     {
-      name: '',
+      name: 'TITLES.gallery',
       href: '/gallery'
     },
     {
-      name: '',
+      name: 'TITLES.models',
       href: '/models'
     },
     {
-      name: '',
+      name: 'TITLES.about',
       href: '/about-us'
     },
     {
-      name: '',
+      name: 'TITLES.contact',
       href: '/contact'
     },
     {
-      name: '',
+      name: 'TITLES.lang',
       href: ''
     }
   ];
@@ -55,9 +55,6 @@ export class NavBarComponent implements OnInit {
     public data: DataService, private titleService: Title, private events: EventService) {
     this.links.forEach(el => this.linksMobile.push(el));
     this.linksMobile.splice(-1, 1);
-    this.data.language.subscribe(() => {
-      this.updateText();
-    });
   }
 
   ngOnInit(): void {
@@ -87,17 +84,6 @@ export class NavBarComponent implements OnInit {
       }
     }
     this.data.language.next((toLang === 'FR') ? Language.FR : Language.EN);
-    this.updateText();
     this.links[5].name = (toLang === 'FR') ? 'Français' : 'English';
-  }
-
-  private updateText(): void {
-    const titles = this.data.getTitles();
-    for (let i = 0; i < this.links.length; ++i) {
-      this.links[i].name = titles[i];
-      if (i < this.links.length - 1) {
-        this.linksMobile[i].name = titles[i]
-      }
-    }
   }
 }

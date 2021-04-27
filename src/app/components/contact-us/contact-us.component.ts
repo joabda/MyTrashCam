@@ -4,7 +4,6 @@ import { DataService } from 'src/app/services/data/data.service';
 import { ContactUsJSON } from 'src/app/interfaces/json/ContactUsJSON';
 import { HttpStatus } from 'src/app/enums/http-codes';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import * as _info from 'src/assets/data/infos.json'
 import { Observable } from 'rxjs';
 import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
 import { shareReplay, map } from 'rxjs/operators';
@@ -17,14 +16,12 @@ import { shareReplay, map } from 'rxjs/operators';
 export class ContactUsComponent implements OnInit {
 
   emailRegEx: RegExp = new RegExp(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
-  info = (_info as any).default[0] as { phoneNumber: string, email: string };
   currentValues: {
     name: string,
     email: string,
     reason: string,
     message: string
   };
-  text: ContactUsJSON;
   static PROXY = 'https://cors-anywhere.herokuapp.com/';
   clicked: boolean;
 
@@ -37,9 +34,6 @@ export class ContactUsComponent implements OnInit {
   constructor(private snacks: MatSnackBar,
     private http: HttpClient, private data: DataService,
     private breakpointObserver: BreakpointObserver) {
-    data.language.subscribe(() => {
-      this.text = data.getContactUs();
-    });
     this.resetInputs();
     this.clicked = false;
   }

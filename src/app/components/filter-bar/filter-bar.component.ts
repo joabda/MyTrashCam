@@ -2,7 +2,6 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
-import { FilterBarJSON } from 'src/app/interfaces/json/filterBarJSON';
 import { PictureJSON } from 'src/app/interfaces/json/pictureJSON';
 import { DataService } from 'src/app/services/data/data.service';
 import { FilterService } from 'src/app/services/filter/filter.service';
@@ -16,7 +15,6 @@ export class FilterBarComponent implements OnInit{
 
   @ViewChild("searchName") searchByName: ElementRef;
   @ViewChild("searchRegion") searchByRegion: ElementRef;
-  text: FilterBarJSON;
   pictures: PictureJSON[];
   modelsNames: Array<string>;
   regions: Array<string>;
@@ -27,7 +25,6 @@ export class FilterBarComponent implements OnInit{
 
   constructor(public data: DataService, private filter: FilterService) {
     data.language.subscribe( () => {
-      this.text = data.getFilterBarText();
       this.pictures = data.getPictures();
     });
     this.modelsControl = new FormControl();

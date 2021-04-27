@@ -1,0 +1,26 @@
+{
+    "CONTACT": {
+        "name": "Your Name",
+        "email": "Your E-mail",
+        "subject": "Subject",
+        "message": "Message",
+        "send": "Submit",
+        "title": "Contact Us",
+        "caption": "Write to us!"
+    },
+    "SEARCH": {
+        "name": "Search with Model's Name",
+        "region": "Select Region",
+        "gender": "Gender",
+        "m": "Male",
+        "f": "Female"
+    },
+    "TITLES": {
+        "home": "Home",
+        "gallery": "Gallery",
+        "models": "Models",
+        "about": "About Us",
+        "contact": "Contact Us",
+        "lang": "Français"
+    }
+}

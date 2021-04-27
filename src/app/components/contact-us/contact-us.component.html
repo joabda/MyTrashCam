@@ -1,22 +1,22 @@
 <div class="wrapper" id="contact">
   <!--Section heading-->
-  <h2 class="title">{{text.title}}</h2>
+  <h2 class="title">{{'CONTACT.title' | translate}}</h2>
   <!-- Contact Infos -->
   <div class="row d-flex justify-content-center" id="info-cont">
     <figure class="col">
-      <a class="d-flex justify-content-center" href="tel:{{info.phoneNumber}}">
+      <a class="d-flex justify-content-center" href="tel:+14388359759">
         <img src="../../../assets/img/icons/phone.png" alt="phone icon">
       </a>
       <figcaption class="d-flex justify-content-center">
-        <a href="tel:{{info.phoneNumber}}">{{info.phoneNumber}}<br><br></a>
+        <a href="tel:+14388359759">+1 (438) 835-9759<br><br></a>
       </figcaption>
     </figure>
     <figure class="col">
-      <a class="d-flex justify-content-center" href="mailto:{{info.email}}">
+      <a class="d-flex justify-content-center" href="mailto:mytrashcam@gmail.com">
         <img src="../../../assets/img/icons/email.png" alt="email icon">
       </a>
       <figcaption class="d-flex justify-content-center">
-        <a href="mailto:{{info.email}}">{{info.email}}<br><br></a>
+        <a href="mailto:mytrashcam@gmail.com">mytrashcam@gmail.com<br><br></a>
       </figcaption>
     </figure>
     <figure class="col">
@@ -44,34 +44,34 @@
           <!--Header-->
           <div class="form-header accent-1">
             <h3>
-              <mdb-icon fas icon="envelope"></mdb-icon> {{text.caption}}
+              <mdb-icon fas icon="envelope"></mdb-icon> {{'CONTACT.caption' | translate}}
             </h3>
           </div>
           <!--Body-->
           <div class="md-form">
             <mdb-icon fas icon="user" class="prefix grey-text"></mdb-icon>
             <input mdbInput type="text" id="form3" class="form-control" [(ngModel)]="currentValues.name">
-            <label for="form3">{{text.name}}</label>
+            <label for="form3">{{'CONTACT.name' | translate}}</label>
           </div>
           <div class="md-form">
             <mdb-icon fas icon="envelope" class="prefix grey-text"></mdb-icon>
             <input mdbInput type="text" id="form2" class="form-control" [(ngModel)]="currentValues.email">
-            <label for="form2">{{text.email}}</label>
+            <label for="form2">{{'CONTACT.email' | translate}}</label>
           </div>
           <div class="md-form">
             <mdb-icon fas icon="tag" class="prefix grey-text"></mdb-icon>
             <input mdbInput type="text" id="form32" class="form-control" [(ngModel)]="currentValues.reason">
-            <label for="form34">{{text.subject}}</label>
+            <label for="form34">{{'CONTACT.subject' | translate}}</label>
           </div>
           <div class="md-form">
             <mdb-icon fas icon="pencil-alt" class="prefix grey-text"></mdb-icon>
             <textarea mdbInput type="text" id="form8" class="md-textarea"
               [(ngModel)]="currentValues.message"></textarea>
-            <label for="form8">{{text.message}}</label>
+            <label for="form8">{{'CONTACT.message' | translate}}</label>
           </div>
           <div class="text-center">
             <button mdbBtn color="light-blue" class="waves-light" mdbWavesEffect
-              (click)="submit(); clicked = true;" [disabled]="clicked">{{text.send}}</button>
+              (click)="submit(); clicked = true;" [disabled]="clicked">{{'CONTACT.send' | translate}}</button>
           </div>
         </mdb-card-body>
       </mdb-card>

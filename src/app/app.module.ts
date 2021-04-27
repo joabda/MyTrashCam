@@ -22,11 +22,13 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { MilestonesComponent } from './components/milestones/milestones.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatMenuModule } from '@angular/material/menu';
 import { FilterBarComponent } from './components/filter-bar/filter-bar.component';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 @NgModule({
   declarations: [
@@ -59,6 +61,13 @@ import { FilterBarComponent } from './components/filter-bar/filter-bar.component
     MatToolbarModule,
     MDBBootstrapModule.forRoot(),
     ReactiveFormsModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [
     DataService,
@@ -67,3 +76,7 @@ import { FilterBarComponent } from './components/filter-bar/filter-bar.component
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
+}

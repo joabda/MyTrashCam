@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import * as _socials from 'src/assets/data/social.json';
 import { Social } from 'src/app/interfaces/social';
 
 @Component({
@@ -9,6 +8,24 @@ import { Social } from 'src/app/interfaces/social';
 })
 export class FooterComponent {
 
-  socials = (_socials as any).default as Social[];
-  constructor() { }
+  socials: Social[];
+  constructor() {
+    this.socials = [
+      {
+        "link": "https://www.tiktok.com/@mytrashcam",
+        "iconSrc": "../../../assets/img/social/tiktok.png",
+        "title": "TikTok"
+      },
+      {
+        "link": "https://www.instagram.com/mytrashcam/",
+        "iconSrc": "../../../assets/img/social/instagram.png",
+        "title": "Instagram"
+      },
+      {
+        "link": "https://www.youtube.com/channel/UC0yes3ERjE4PFzoaVs_uudQ/featured",
+        "iconSrc": "../../../assets/img/social/youtube.png",
+        "title": "Youtube"
+      }
+    ];
+  }
 }

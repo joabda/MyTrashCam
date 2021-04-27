@@ -21,11 +21,11 @@
             </a>
             <nav class="nav nav-pills flex-column flex-sm-row" *ngIf="isBigScreen">
                 <li *ngFor="let link of links; let i = index">
-                    <a *ngIf="i < 5" type="button" class="nav-but" id="{{i}}" (click)="changeTitle(i)" routerLink="{{link.href}}">{{link.name}}</a>
+                    <a *ngIf="i < 5" type="button" class="nav-but" id="{{i}}" (click)="changeTitle(i)" routerLink="{{link.href}}">{{link.name | translate}}</a>
                 </li>
                 <li>
                     <button type="button" class="nav-but" [matMenuTriggerFor]="menu"
-                        style="background-color: transparent; border-color: transparent; font-weight: 500;">{{links[5].name}}</button>
+                        style="background-color: transparent; border-color: transparent; font-weight: 500;">{{links[5].name | translate}}</button>
                     <mat-menu #menu="matMenu" style="z-index: 9999;">
                         <button mat-menu-item (click)="this.switchLanguage('FR')">Français</button>
                         <button mat-menu-item (click)="this.switchLanguage('EN')">English</button>
