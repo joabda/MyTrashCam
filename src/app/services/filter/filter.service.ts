@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject} from 'rxjs';
+import { BehaviorSubject } from 'rxjs';
 import { FilterOption } from 'src/app/interfaces/filter';
 
 @Injectable({
@@ -11,13 +11,13 @@ export class FilterService {
   region: BehaviorSubject<string>;
   sex: BehaviorSubject<string>;
   filterOptions: BehaviorSubject<FilterOption>;
-  
-  constructor() { 
+
+  constructor() {
     this.name = new BehaviorSubject("");
     this.region = new BehaviorSubject("");
     this.sex = new BehaviorSubject("");
-    this.filterOptions = new BehaviorSubject({name:"", region:"", sex:""});
-    
+    this.filterOptions = new BehaviorSubject({ name: "", region: "", sex: "" });
+
     this.name.subscribe(() => this.filterOptions.next({
       name: this.name.value,
       region: this.region.value,

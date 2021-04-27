@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { Subscription } from 'rxjs/internal/Subscription';
 import { FilterOption } from 'src/app/interfaces/filter';
 import { PictureJSON } from 'src/app/interfaces/json/pictureJSON';

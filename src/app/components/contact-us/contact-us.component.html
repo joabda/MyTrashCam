@@ -4,8 +4,8 @@
   <!-- Contact Infos -->
   <div class="row d-flex justify-content-center" id="info-cont">
     <figure class="col">
-      <a class="d-flex justify-content-center" href="tel:+14388359759">
-        <img src="../../../assets/img/icons/phone.png" alt="phone icon">
+      <a class="d-flex justify-content-center icon" href="tel:+14388359759">
+        <mat-icon aria-hidden="false" aria-label="Phone">phone_in_talk</mat-icon>
       </a>
       <figcaption class="d-flex justify-content-center">
         <a href="tel:+14388359759">+1 (438) 835-9759<br><br></a>
@@ -13,7 +13,7 @@
     </figure>
     <figure class="col">
       <a class="d-flex justify-content-center" href="mailto:mytrashcam@gmail.com">
-        <img src="../../../assets/img/icons/email.png" alt="email icon">
+        <mat-icon aria-hidden="false" aria-label="Email">email</mat-icon>
       </a>
       <figcaption class="d-flex justify-content-center">
         <a href="mailto:mytrashcam@gmail.com">mytrashcam@gmail.com<br><br></a>
@@ -22,7 +22,7 @@
     <figure class="col">
       <a class="d-flex justify-content-center"
         href="https://www.google.com/maps/dir//Polytechnique+Montr%C3%A9al,+2900+Edouard+Montpetit+Blvd,+Montreal,+QC+H3T+1J4,+Canada/@45.4790683,-73.7482601,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x4cc919f2a9fc4d71:0xda267ca95684133e!2m2!1d-73.6131831!2d45.5047939">
-        <img src="../../../assets/img/icons/location.png" alt="location icon" loading="lazy">
+        <mat-icon aria-hidden="false" aria-label="Location">fmd_bad</mat-icon>
       </a>
       <figcaption class="d-flex justify-content-center">
         <a href="https://www.google.com/maps/place/Saint-Laurent,+Montreal">
@@ -70,14 +70,13 @@
             <label for="form8">{{'CONTACT.message' | translate}}</label>
           </div>
           <div class="text-center">
-            <button mdbBtn color="light-blue" class="waves-light" mdbWavesEffect
-              (click)="submit(); clicked = true;" [disabled]="clicked">{{'CONTACT.send' | translate}}</button>
+            <button mdbBtn color="light-blue" class="waves-light" mdbWavesEffect (click)="submit(); clicked = true;"
+              [disabled]="clicked">{{'CONTACT.send' | translate}}</button>
           </div>
         </mdb-card-body>
       </mdb-card>
       <!--Form with header-->
 
-      
       <img src="../../../assets/img/peter.jpg" alt="Peter Haddad, Photographer" id="picture" loading="lazy">
     </div>
     <!-- Contact Form -->
