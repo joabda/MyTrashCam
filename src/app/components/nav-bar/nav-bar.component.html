@@ -2,8 +2,8 @@
     <mat-sidenav #drawer class="sidenav" (focusout)="drawer.close()"
         [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" mode="over" [fixedInViewport]="true" fullscreen>
         <mat-nav-list>
-            <a *ngFor="let link of linksMobile" type="button" class="nav-but-mobile" href="{{link.href}}">{{link.name}}</a>
-            <a type="button" role="button" (click)="switchLanguage()" class="nav-but-mobile" >{{links[5].name}}</a>
+            <a *ngFor="let link of linksMobile" type="button" class="nav-but-mobile" href="{{link.href}}">{{link.name | translate}}</a>
+            <a type="button" role="button" (click)="switchLanguage()" class="nav-but-mobile" >{{links[5].name | translate}}</a>
         </mat-nav-list>
     </mat-sidenav>
 
